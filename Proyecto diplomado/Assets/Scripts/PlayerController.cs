@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Transform myCam = null;
     public float mouseSensitivity = 3;
-    [SerializeField] private float walkSpeed;
+    public float walkSpeed;
     [SerializeField] private float gravity = -13f;
     [SerializeField][Range(0.0f, 0.5f)] private float moveSmoothTime = 0.3f; 
     [SerializeField][Range(0.0f, 0.5f)] private float mouseSmoothTime = 0.3f; 
@@ -57,14 +57,14 @@ public class PlayerController : MonoBehaviour
     }
     public void MouseLook()
     {
-        Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
-        cameraPitch -= currentMouseDelta.y * mouseSensitivity;
-        cameraPitch = Mathf.Clamp(cameraPitch, -90, 90f);
-        myCam.localEulerAngles = Vector3.right * cameraPitch;
-        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        if(GameManager.gameIsPaused == false)
+        {
+            Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+            currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
+            cameraPitch -= currentMouseDelta.y * mouseSensitivity;
+            cameraPitch = Mathf.Clamp(cameraPitch, -90, 90f);
+            myCam.localEulerAngles = Vector3.right * cameraPitch;
+            transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        }
     }
-
-
-
 }

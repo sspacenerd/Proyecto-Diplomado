@@ -8,6 +8,8 @@ public class InventoryItemController : MonoBehaviour
 
     public void ItemInteract()
     {
+        InventorySystem.instance.Remove(item);
+
     }
     public void AddItem(Item newItem)
     {
@@ -19,4 +21,5 @@ public class InventoryItemController : MonoBehaviour
         InventorySystem.instance.Remove(item);
         Destroy(gameObject);
     }
+    
 }

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1746560338152307825}
   - component: {fileID: 1480363385898672534}
   - component: {fileID: -7116649736679570516}
-  - component: {fileID: 5761235386129641146}
   m_Layer: 6
   m_Name: Cube (1)
   m_TagString: CanPickUp
@@ -117,19 +116,6 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &-7116649736679570516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6394347033530318192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85cf1928f402f924395c12f0318a5a1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 681f958b75ef05f4ab24eec96a4396eb, type: 2}
---- !u!114 &5761235386129641146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

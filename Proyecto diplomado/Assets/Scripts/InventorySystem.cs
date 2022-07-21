@@ -26,25 +26,31 @@ public class InventorySystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) && GameManager.gameIsPaused == false)
         {
             if (!isOpen)
             {
                 ListItems();
                 SetInventoryItems();
-                inventoryReference.transform.DOLocalMoveX(-709f, 1);
+                inventoryReference.transform.DOLocalMoveX(-881, 1);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 player.GetComponent<PlayerController>().mouseSensitivity = 0;
+                player.GetComponent<PlayerController>().walkSpeed = 0;
                 player.GetComponentInChildren<PickUp>().rayDistance = 0;
                 isOpen = true;
             }
             else
             {
-                inventoryReference.transform.DOLocalMoveX(-1211, 1);
+                foreach (Transform item in itemContent)
+                {
+                    Destroy(item.gameObject);
+                }
+                inventoryReference.transform.DOLocalMoveX(-1049, 1);
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 player.GetComponent<PlayerController>().mouseSensitivity = 3;
+                player.GetComponent<PlayerController>().walkSpeed = 5;
                 player.GetComponentInChildren<PickUp>().rayDistance = 3;
                 isOpen = false;
             }
