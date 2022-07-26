@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.5f1 (40eb3a945986) revision 4254522'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit CoreSingleLanguage' Language: 'es' Physical Memory: 16238 MB
+OS: 'Windows 10  (10.0.19044) 64bit Enterprise' Language: 'es' Physical Memory: 16250 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\2021.3.5f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker4
 -projectPath
-D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
+D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-64961
-Successfully changed project path to: D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
-D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
+54583
+Successfully changed project path to: D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
+D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,226 +47,111 @@ D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 251.03 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 171.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
-[Subsystems] Discovering subsystems at path D:/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
     Vendor:   NVIDIA
-    VRAM:     4021 MB
+    VRAM:     4018 MB
     Driver:   31.0.15.1659
 Initialize mono
-Mono path[0] = 'D:/2021.3.5f1/Editor/Data/Managed'
-Mono path[1] = 'D:/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.025940 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.050156 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 233.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 156.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.545 seconds
+- Completed reload, in  1.259 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1546ms)
-		BeginReloadAssembly (307ms)
+	ReloadAssembly (1260ms)
+		BeginReloadAssembly (167ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (993ms)
-			LoadAssemblies (288ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (817ms)
+			LoadAssemblies (153ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (190ms)
+			SetupTypeCache (171ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (601ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (479ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (23ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (234ms)
+				RefreshPlugins (156ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (262ms)
-				ProcessInitializeOnLoadMethodAttributes (84ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.056430 seconds.
+Registered in 0.026538 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 198.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 156.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.218 seconds
+- Completed reload, in  2.608 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3220ms)
-		BeginReloadAssembly (359ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (2433ms)
-			LoadAssemblies (447ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (642ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (130ms)
-			SetupLoadedEditorAssemblies (1198ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (199ms)
-				BeforeProcessingInitializeOnLoad (252ms)
-				ProcessInitializeOnLoadAttributes (500ms)
-				ProcessInitializeOnLoadMethodAttributes (197ms)
-				AfterProcessingInitializeOnLoad (37ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
-Refreshing native plugins compatible for Editor in 2.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5049 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (0.7 MB). Loaded Objects now: 5505.
-Memory consumption went from 199.6 MB to 198.9 MB.
-Total: 6.694900 ms (FindLiveObjects: 0.894100 ms CreateObjectMapping: 1.032000 ms MarkObjects: 4.342800 ms  DeleteObjects: 0.423900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.052275 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.244 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3245ms)
-		BeginReloadAssembly (435ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (91ms)
-		EndReloadAssembly (2482ms)
-			LoadAssemblies (397ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (683ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (131ms)
-			SetupLoadedEditorAssemblies (1164ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (36ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (304ms)
-				ProcessInitializeOnLoadAttributes (569ms)
-				ProcessInitializeOnLoadMethodAttributes (196ms)
-				AfterProcessingInitializeOnLoad (55ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (41ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 11.12 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4913 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 5508.
-Memory consumption went from 190.9 MB to 190.2 MB.
-Total: 10.981200 ms (FindLiveObjects: 2.423700 ms CreateObjectMapping: 1.477500 ms MarkObjects: 6.557700 ms  DeleteObjects: 0.519900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.035102 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.489 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2490ms)
-		BeginReloadAssembly (294ms)
+	ReloadAssembly (2609ms)
+		BeginReloadAssembly (265ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1907ms)
-			LoadAssemblies (312ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (2097ms)
+			LoadAssemblies (215ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (510ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (911ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (1192ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (29ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (233ms)
-				ProcessInitializeOnLoadAttributes (440ms)
-				ProcessInitializeOnLoadMethodAttributes (156ms)
-				AfterProcessingInitializeOnLoad (49ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (156ms)
+				BeforeProcessingInitializeOnLoad (275ms)
+				ProcessInitializeOnLoadAttributes (544ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (48ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (38ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 8.06 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4913 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 5511.
-Memory consumption went from 190.9 MB to 190.2 MB.
-Total: 6.178300 ms (FindLiveObjects: 0.616200 ms CreateObjectMapping: 0.463400 ms MarkObjects: 4.594100 ms  DeleteObjects: 0.502900 ms)
+Unloading 5049 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (0.7 MB). Loaded Objects now: 5505.
+Memory consumption went from 199.3 MB to 198.6 MB.
+Total: 5.912900 ms (FindLiveObjects: 0.556300 ms CreateObjectMapping: 0.514100 ms MarkObjects: 4.491700 ms  DeleteObjects: 0.348500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -274,878 +159,241 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 11617.413252 seconds.
-  path: Assets/Archteria3D/Scenes/ExampleScene.unity
-  artifactKey: Guid(735e1860835ddd34da82488c45705579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/Scenes/ExampleScene.unity using Guid(735e1860835ddd34da82488c45705579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda17745e2546e4d85aaa7af3e9f743c') in 0.020248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 100.041309 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51fdcf9f476712ffe577341e59eed751') in 0.006779 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.883495 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Models
-  artifactKey: Guid(2635f0d5c6cc3a8459523fd1bfb85ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Models using Guid(2635f0d5c6cc3a8459523fd1bfb85ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a43669b23dfa4de0cb759cfad9c31a1') in 0.012500 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.017330 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab
-  artifactKey: Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab using Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a911cff075c2ba5147d6683f829a846c') in 0.629738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.079952 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab
-  artifactKey: Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab using Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317aceb2967bc13f803edb401048d70f') in 0.062396 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.019979 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab
-  artifactKey: Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab using Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45125633f46aa686ea872d63a5628d21') in 0.060245 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.023103 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab
-  artifactKey: Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab using Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea9f355a1a6cc53e695cc5f127bd732') in 0.047322 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.817361 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab
-  artifactKey: Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_3.prefab using Guid(526c0ba7c5154e348be9c2e257ab1518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3c69df2b180118a9a78e86295df6c7') in 0.047348 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.047139 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.060 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3061ms)
-		BeginReloadAssembly (446ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (83ms)
-		EndReloadAssembly (2296ms)
-			LoadAssemblies (415ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (609ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (89ms)
-			SetupLoadedEditorAssemblies (1062ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (28ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (271ms)
-				ProcessInitializeOnLoadAttributes (530ms)
-				ProcessInitializeOnLoadMethodAttributes (179ms)
-				AfterProcessingInitializeOnLoad (49ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (52ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 10.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4920 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 5571.
-Memory consumption went from 197.9 MB to 197.2 MB.
-Total: 7.164700 ms (FindLiveObjects: 0.459900 ms CreateObjectMapping: 0.412300 ms MarkObjects: 5.614300 ms  DeleteObjects: 0.676500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 63.027741 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab
-  artifactKey: Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab using Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1c13ebc7b798ebb6f69a66c9e022a1') in 0.359414 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.119844 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab
-  artifactKey: Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab using Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67abdc744ffefff779165de8508d0fbd') in 0.048076 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.670371 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab
-  artifactKey: Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab using Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5855d5d6b02868cb45ec192ac5eae6') in 0.042565 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.496084 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab
-  artifactKey: Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab using Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9858b07a224fa4bd5040cdeabf99df') in 0.049629 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.591818 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab
-  artifactKey: Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Sink_4.prefab using Guid(0f6735d4194946d4db978f8ad43a6b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ae5f4e2d88f622633575ede9220977') in 0.045001 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.036546 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f0abb965ee328015448d4efce13995') in 0.095912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.127701 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c775dfc67b8160fbb505e4960e530256') in 0.092954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.254184 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ad67a9ae5adfbe3f0775c0f3d8d952') in 0.080563 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.159686 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65689c0d23dd65ad103722faeea4e7e4') in 0.072128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.088103 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60bf335b73f404baf5a68247bac6a7d') in 0.084441 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.953244 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4a573c864ac2b1a762ff26ac901a39') in 0.095664 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.660892 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7703d3fe8067dbd82ad3ab89e5f45644') in 0.085731 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.495962 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '614bf55ecc2009c793d6ddf947ed3101') in 0.078245 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.660489 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab
-  artifactKey: Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Prefabs/Bath_Suit_Sink.prefab using Guid(2e0d72c067011de48ae6add17f07bf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5587b6a471c0210a4969cd174322d219') in 0.078371 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.283370 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Cabinet.prefab
-  artifactKey: Guid(fed4e82ad94e592429e0737ff19aeb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Cabinet.prefab using Guid(fed4e82ad94e592429e0737ff19aeb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7f02463f2883f8fee8779da3a633a7') in 0.046002 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.096078 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Cabinet.prefab
-  artifactKey: Guid(fed4e82ad94e592429e0737ff19aeb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Cabinet.prefab using Guid(fed4e82ad94e592429e0737ff19aeb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77b65b53345f5124dfb361c0e4caec8') in 0.038406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.609989 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Cabinet.prefab
-  artifactKey: Guid(fed4e82ad94e592429e0737ff19aeb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Cabinet.prefab using Guid(fed4e82ad94e592429e0737ff19aeb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a9a2e5937a08832489f90074dcac6d') in 0.044018 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.857612 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Make_Up_Desk.prefab
-  artifactKey: Guid(53346070275e4f94085ed93007f3aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Make_Up_Desk.prefab using Guid(53346070275e4f94085ed93007f3aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530026b0fa4c5590a06a33695a4cf543') in 0.048666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.616696 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Make_Up_Desk.prefab
-  artifactKey: Guid(53346070275e4f94085ed93007f3aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Make_Up_Desk.prefab using Guid(53346070275e4f94085ed93007f3aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ada1c55f4b1ef41926f22f5e3172590') in 0.047975 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.427247 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Make_Up_Desk.prefab
-  artifactKey: Guid(53346070275e4f94085ed93007f3aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Make_Up_Desk.prefab using Guid(53346070275e4f94085ed93007f3aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aaf1e21badc67cdaad43d5ba57a8853') in 0.054244 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.317694 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab
-  artifactKey: Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab using Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53d3db9a6ab70fe1d8b9a696a307026') in 0.049691 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.206439 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab
-  artifactKey: Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab using Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c31261fcccfe9e971c33303963a63b') in 0.040380 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.041745 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab
-  artifactKey: Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab using Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ccb8e3af5e92131242cce9921ce5ef4') in 0.044314 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.640458 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab
-  artifactKey: Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab using Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a60b2c94b5625968e9efaa504d309c1') in 0.050099 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.328354 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab
-  artifactKey: Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Nightstand.prefab using Guid(2c60c6b1e6b54d345867a3f7364fb437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9f9f7c88bef22489dd583f71d9fb7d') in 0.038751 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.685515 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab
-  artifactKey: Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab using Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79a7a3493ba0b5d596f4e4e4c62af78') in 0.039125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.245460 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab
-  artifactKey: Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab using Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b54ded1dd7657158a2b2684a6608d01') in 0.040609 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.325284 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab
-  artifactKey: Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab using Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7cf559c304b449a8d60d01718d2812') in 0.045873 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.116505 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab
-  artifactKey: Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab using Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcec31cb4c60ef67f8dd025cee5a7aef') in 0.043047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.933293 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab
-  artifactKey: Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD1_Wardrobe.prefab using Guid(ec2b176000d956c45934eebcea441030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a644ac471c626a4a1a23c4ce2bf0358a') in 0.069368 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.703279 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab
-  artifactKey: Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab using Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98cddaff1c9714ad9327887d79aee66') in 0.047279 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.155423 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab
-  artifactKey: Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab using Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5365d68c38177b7d9085666f65d63fd') in 0.040349 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.675654 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab
-  artifactKey: Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab using Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07db61c00dd73922b238e4a9197562fa') in 0.053447 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.880415 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab
-  artifactKey: Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab using Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '868696e26c7d716145ddb166f51c4274') in 0.043911 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.604848 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab
-  artifactKey: Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Cabinet1.prefab using Guid(bedf2bf7a895bc14ba22717dd2378d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae23754cba4b2c0a7963ef0114eb49f') in 0.052237 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.088988 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Make_Up_Desk.prefab
-  artifactKey: Guid(b144c0157568e0d4cbe794bc81369735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Make_Up_Desk.prefab using Guid(b144c0157568e0d4cbe794bc81369735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a86e06e8cd9668837f8523c12acc94') in 0.053666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.409651 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Make_Up_Desk.prefab
-  artifactKey: Guid(b144c0157568e0d4cbe794bc81369735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Make_Up_Desk.prefab using Guid(b144c0157568e0d4cbe794bc81369735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad0fe3a548488b0cd59699b1c8c1c82') in 0.065863 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.393337 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Make_Up_Desk.prefab
-  artifactKey: Guid(b144c0157568e0d4cbe794bc81369735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Make_Up_Desk.prefab using Guid(b144c0157568e0d4cbe794bc81369735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5cdcdfdcb0e23aa3d44a272e6d081d3') in 0.060235 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.223074 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab
-  artifactKey: Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab using Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67cd1edc8e75190b8ba90e32e0f4adb') in 0.052281 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.232997 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab
-  artifactKey: Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab using Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b7e80c7fd8c98be373e10bb4b14c6d') in 0.053087 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.136320 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab
-  artifactKey: Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab using Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e7ab248ca4854b4c8c89213c47e527') in 0.054403 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.005872 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab
-  artifactKey: Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab using Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374884f2264db2e418f05d424176b06c') in 0.052921 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.815183 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab
-  artifactKey: Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab using Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e907e32fd21191c873e87a6b8df25200') in 0.061091 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.480289 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab
-  artifactKey: Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab using Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b7d802a11fd7399fcd54737d131c2f') in 0.047777 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.869635 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab
-  artifactKey: Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD2_Wardrobe.prefab using Guid(f9caca840fbb33b4cb0ed56f807ce932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cecb380ef85085b31c24b2a5c6058f1') in 0.048179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.614105 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Cabinet.prefab
-  artifactKey: Guid(1f683ffba5fe3b743ac2c4effee1f2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Cabinet.prefab using Guid(1f683ffba5fe3b743ac2c4effee1f2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b53ec6abbcd652edf5d0a04ea99c04') in 0.054489 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.316330 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Cabinet.prefab
-  artifactKey: Guid(1f683ffba5fe3b743ac2c4effee1f2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Cabinet.prefab using Guid(1f683ffba5fe3b743ac2c4effee1f2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0067b746a1f9f44e194e26f61acd92') in 0.048992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.155024 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Cabinet.prefab
-  artifactKey: Guid(1f683ffba5fe3b743ac2c4effee1f2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Cabinet.prefab using Guid(1f683ffba5fe3b743ac2c4effee1f2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f462c07a2eec61a9b1aa4d571b5b935') in 0.049487 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.147152 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab
-  artifactKey: Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab using Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a5fad9157e015d9192392904426739') in 0.052456 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.474703 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab
-  artifactKey: Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab using Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297db16d1ff9663e1bf461afadf72cd1') in 0.045764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.247254 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab
-  artifactKey: Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab using Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b4cce11e749d3c37349441c09b7f5e') in 0.045871 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.830187 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab
-  artifactKey: Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab using Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5c45e15d1bb56c917750be0774c0bb') in 0.064932 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.143124 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab
-  artifactKey: Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD3_Wardrobe.prefab using Guid(b39f482631161cf4490ab0e3786837dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74983b3af567a63546d4c8437450793') in 0.047172 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.518280 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Cabinet.prefab
-  artifactKey: Guid(668027e022a7bbf40982108607796778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Cabinet.prefab using Guid(668027e022a7bbf40982108607796778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed905eddda928e3192622cbdc8eb4a90') in 0.042514 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.834691 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Cabinet.prefab
-  artifactKey: Guid(668027e022a7bbf40982108607796778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Cabinet.prefab using Guid(668027e022a7bbf40982108607796778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827a331145d97786ebc0ee811abf3405') in 0.043645 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.178524 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Cabinet.prefab
-  artifactKey: Guid(668027e022a7bbf40982108607796778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Cabinet.prefab using Guid(668027e022a7bbf40982108607796778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7167b039d37b2820cb6e7939bd65bb') in 0.047616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.050539 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Wardrobe.prefab
-  artifactKey: Guid(0d1f5253a8a13e44baa7aa39062ef93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Wardrobe.prefab using Guid(0d1f5253a8a13e44baa7aa39062ef93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e376405962a384155597d1b496295534') in 0.053293 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.485251 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Wardrobe.prefab
-  artifactKey: Guid(0d1f5253a8a13e44baa7aa39062ef93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Wardrobe.prefab using Guid(0d1f5253a8a13e44baa7aa39062ef93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4f046ad8feebd24493cf8d2baeb8c1') in 0.043077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.196036 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Wardrobe.prefab
-  artifactKey: Guid(0d1f5253a8a13e44baa7aa39062ef93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Wardrobe.prefab using Guid(0d1f5253a8a13e44baa7aa39062ef93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85b369b99236a4b622357bb9765d3c5') in 0.054043 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.814856 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Wardrobe.prefab
-  artifactKey: Guid(0d1f5253a8a13e44baa7aa39062ef93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/BD4_Wardrobe.prefab using Guid(0d1f5253a8a13e44baa7aa39062ef93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0127ce131d5112d461f92cfd42f950bc') in 0.045330 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 43.638274 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79de54b9953ae4c4350a1ba03542f53') in 0.083757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.190185 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd825d45c874dcf566d329eee1e83d511') in 0.069199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.014485 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4035f65cecc2524a341f645f2ab827db') in 0.066659 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.644115 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7d41753cba72837b978824e670d74a') in 0.063668 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.249094 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af06ea973d92fbfbfc6e496fc5e3afe') in 0.080923 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.873782 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299bcde67bfd448d9147e4323a108296') in 0.067678 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.408499 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a56d0eb798d1b29340f6ca22b14bbf') in 0.068304 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.146288 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ddc7430fb2285f16f9e51181950317e') in 0.073607 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.069329 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e41b844b9b52c2d1d146af2965ec24') in 0.070496 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.704354 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe586fdd3ac9c9d201b4c9043b36e30e') in 0.069009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.529028 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab
-  artifactKey: Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1.prefab using Guid(6f9cba85a91a25343b31af49e7a6273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baab0fe44f11d240cdb1953353a0a45f') in 0.072099 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.670085 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab
-  artifactKey: Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab using Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd964ec2389603dbb9bb5e0325bfb9e94') in 0.115269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.005122 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab
-  artifactKey: Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab using Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0bca1887c133aa71d92155fe6f31339') in 0.090513 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.204871 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab
-  artifactKey: Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab using Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8749660ff96e42712120048137a444d0') in 0.106380 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.294725 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab
-  artifactKey: Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab using Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6980eafffc2f811f61a41bcb8b870145') in 0.126359 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.137153 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab
-  artifactKey: Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_1_1.prefab using Guid(6236f9e49415747469537a00f9795e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d2e77003f4de4e41e0281dec537ef4f') in 0.093219 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.120820 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_2.prefab
-  artifactKey: Guid(250c9389951bff94db2b9857a3780ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_2.prefab using Guid(250c9389951bff94db2b9857a3780ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedd02dbc230b4b7cc2fd86d9cbc4a3b') in 0.085016 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.939242 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_2.prefab
-  artifactKey: Guid(250c9389951bff94db2b9857a3780ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_2.prefab using Guid(250c9389951bff94db2b9857a3780ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dad272a8436b5b067170547209a3f8d') in 0.089468 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.862386 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_3.prefab
-  artifactKey: Guid(a33e13d023236f347a3f3a8e8e02d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_3.prefab using Guid(a33e13d023236f347a3f3a8e8e02d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578bfd016b59b38101f9514d141b3c5e') in 0.067504 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.483649 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_3.prefab
-  artifactKey: Guid(a33e13d023236f347a3f3a8e8e02d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Prefabs/Dress_Room_Wardrobe_3.prefab using Guid(a33e13d023236f347a3f3a8e8e02d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97725ba5bed7ceeea55fb66ab906b548') in 0.067823 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.191900 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Bar_Light.prefab
-  artifactKey: Guid(6dcf70f796b053f4eb8e7e224584fcd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Bar_Light.prefab using Guid(6dcf70f796b053f4eb8e7e224584fcd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4572d85d150052dec17d9ec7408613') in 0.069856 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.021393 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Chandelier_3.prefab
-  artifactKey: Guid(98cd8480c197a9947a15d4bb75a96146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Chandelier_3.prefab using Guid(98cd8480c197a9947a15d4bb75a96146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd92139c2d0f0045a8385fef62cae650') in 0.167087 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Chandelier_4.prefab
-  artifactKey: Guid(ff8966117b0b0ff41a42b4c32c806e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Chandelier_4.prefab using Guid(ff8966117b0b0ff41a42b4c32c806e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c63be13c2177e0dee72b949a2cca189b') in 0.091989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Lamp_Floor_1.prefab
-  artifactKey: Guid(8fd1bbfb7aee5fc4f92bbc934fe145ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Lamp_Floor_1.prefab using Guid(8fd1bbfb7aee5fc4f92bbc934fe145ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b958b591a67595c3a12ced084831a1b') in 0.103558 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Chandelier_2.prefab
-  artifactKey: Guid(3f030ce482e1def429d1ac854e0e1676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Chandelier_2.prefab using Guid(3f030ce482e1def429d1ac854e0e1676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3bc52c144b7f6258c49cd8244bccb84') in 0.096169 seconds 
+  Time since last request: 517372.628780 seconds.
+  path: Assets/Art/Textures
+  artifactKey: Guid(010425326a0a7bf47bfd0e222e0d93d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures using Guid(010425326a0a7bf47bfd0e222e0d93d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2573d99cfc6ad3946ed486b4910408a') in 0.018718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.025419 seconds.
+  path: Assets/Art/Textures/Concrete_017_ambientOcclusion.jpg
+  artifactKey: Guid(7ad7f6ffdd967504f890480f02d29fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Concrete_017_ambientOcclusion.jpg using Guid(7ad7f6ffdd967504f890480f02d29fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31704dd3343ac36a869eff7283d725f') in 0.131488 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000045 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Lamp_Table_3.prefab
-  artifactKey: Guid(7e02acfc4fb06754ea5acd8bb460dacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Lamp_Table_3.prefab using Guid(7e02acfc4fb06754ea5acd8bb460dacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11634933709c64ba7ac0d2d5d425e9ef') in 0.110999 seconds 
+  path: Assets/Art/Textures/Tiles_Terracotta_007_normal.jpg
+  artifactKey: Guid(0cd914a4d95a92944985e819e03e10a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Tiles_Terracotta_007_normal.jpg using Guid(0cd914a4d95a92944985e819e03e10a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095ec71ad6e4932568fb3a5a15eb6337') in 0.085267 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Lamp_Table_2.prefab
-  artifactKey: Guid(41b65a4402fcc624fb3a43e0c64b761a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Lamp_Table_2.prefab using Guid(41b65a4402fcc624fb3a43e0c64b761a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba86d40acecb79f9bffa8d1afd2cf581') in 0.090383 seconds 
+  Time since last request: 0.000060 seconds.
+  path: Assets/Art/Textures/Plaster_Rough_001_COLOR.jpg
+  artifactKey: Guid(3bd71cb21cd7b3a489444b79db15c2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Plaster_Rough_001_COLOR.jpg using Guid(3bd71cb21cd7b3a489444b79db15c2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b28d771371be0b5cfe22f1ad13ffedc') in 0.027013 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Lamp_Wall.prefab
-  artifactKey: Guid(31107ebe6f76ffa48831093d79b03040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Chandelier_Pack/Prefabs/Lamp_Wall.prefab using Guid(31107ebe6f76ffa48831093d79b03040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099dcdb7d1bf6ff065ab36991b881d35') in 0.099295 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Textures/Plaster_Rough_001_OCC.jpg
+  artifactKey: Guid(9058d1b18a95a684db35842bb0aee0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Plaster_Rough_001_OCC.jpg using Guid(9058d1b18a95a684db35842bb0aee0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12fa0107660e0dd7c82ee554774f50ca') in 0.023542 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.447829 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Textures
-  artifactKey: Guid(fa5202f42f37ba741b4d9e17ada5e60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Textures using Guid(fa5202f42f37ba741b4d9e17ada5e60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e6c649fa611a3f86440c64081a20c4') in 0.014696 seconds 
+  Time since last request: 0.000067 seconds.
+  path: Assets/Art/Textures/Terrazzo_003_ambientOcclusion.jpg
+  artifactKey: Guid(c866bc4777276004c9f576fdfa292938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Terrazzo_003_ambientOcclusion.jpg using Guid(c866bc4777276004c9f576fdfa292938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc355cf0084c79857cb8b5a80329311') in 0.031985 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.751738 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Refrigerator.prefab
-  artifactKey: Guid(65b2c3be5665c7343acef3731b296e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Refrigerator.prefab using Guid(65b2c3be5665c7343acef3731b296e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c619c756019defe1b4b605df4a807899') in 0.058584 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.319604 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Refrigerator.prefab
-  artifactKey: Guid(65b2c3be5665c7343acef3731b296e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Refrigerator.prefab using Guid(65b2c3be5665c7343acef3731b296e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fafd9a96092c95609c54b616da90823') in 0.053786 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.797402 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Refrigerator.prefab
-  artifactKey: Guid(65b2c3be5665c7343acef3731b296e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Refrigerator.prefab using Guid(65b2c3be5665c7343acef3731b296e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3ceb3f2f2f7cc8244a685044ad0433') in 0.049008 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.979894 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab
-  artifactKey: Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab using Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec54c86505f39c7586115c23efc11791') in 0.131442 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.966613 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab
-  artifactKey: Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab using Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ad59ea51dd7f41b60bd478398cfb70') in 0.127955 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.665395 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab
-  artifactKey: Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab using Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4988f20a819cca7995c0831ec4fc1a20') in 0.140914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.176304 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab
-  artifactKey: Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab using Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9ec60b00dfe5d32f203f46da97f977') in 0.129926 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.590849 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab
-  artifactKey: Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab using Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb9f8f6fb3db063a4928bd7bbb656ec') in 0.176159 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.453470 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab
-  artifactKey: Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab using Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958c0a490c517820b9656c8d400ee0ef') in 0.147710 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.019939 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab
-  artifactKey: Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Cabinet.prefab using Guid(c02288a50ed44ec4fa529f635f1e69dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b60bca34bcb922ec80658046763df2') in 0.125061 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.009202 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs
-  artifactKey: Guid(b0db7b65af329d2419df87b5b44c8344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs using Guid(b0db7b65af329d2419df87b5b44c8344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1545d97eeeddee3663cdc5235fc2fb') in 0.006806 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Bar_Desk_Chair.prefab
-  artifactKey: Guid(60258fc90a8132947aa3843a2990009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Bar_Desk_Chair.prefab using Guid(60258fc90a8132947aa3843a2990009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8302ca64f87e76db4cb4c1f95c69fb2') in 0.067612 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Bird_Cage_Stand.prefab
-  artifactKey: Guid(1bf84f5a74afb4042a77a9014df1548e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Bird_Cage_Stand.prefab using Guid(1bf84f5a74afb4042a77a9014df1548e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38031edb0ba47237b88d340afb7554f3') in 0.086878 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Chair_Gallery.prefab
-  artifactKey: Guid(cb1fce4e0ac17454198c8161b7f7d26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Chair_Gallery.prefab using Guid(cb1fce4e0ac17454198c8161b7f7d26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c235bf16c263d0ba3d69d280832ce62b') in 0.060769 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Console_5.prefab
-  artifactKey: Guid(108dde06822c0bb4d8a90cef0373e35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Console_5.prefab using Guid(108dde06822c0bb4d8a90cef0373e35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c47ecd547a479f545981874284113b49') in 0.091277 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Drink_4.prefab
-  artifactKey: Guid(6651b9ac4cc463d4990d660988723366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Drink_4.prefab using Guid(6651b9ac4cc463d4990d660988723366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ea1478a3f7c1b82ce801712948ade9') in 0.066772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Flashlight.prefab
-  artifactKey: Guid(fe23b8d8e4ec07d4c836f2d88c62ecbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Flashlight.prefab using Guid(fe23b8d8e4ec07d4c836f2d88c62ecbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9d1328d8384b30eef4dab6e8175d3f') in 0.071373 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Cabinet_2.prefab
-  artifactKey: Guid(6ab10af81e2b66c4a81d128fbc35fb66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Cabinet_2.prefab using Guid(6ab10af81e2b66c4a81d128fbc35fb66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c07484cb38ec0ecb0eb8089e54b0b722') in 0.116913 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Breakfast_Area_Group_Table.prefab
-  artifactKey: Guid(257295ff1da13e04db7b974d4b563414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Breakfast_Area_Group_Table.prefab using Guid(257295ff1da13e04db7b974d4b563414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff2c518296f7429390868a6e663cb13') in 0.070655 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Billiards_Table.prefab
-  artifactKey: Guid(943872e996b18cb44baf05b0277a633c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Billiards_Table.prefab using Guid(943872e996b18cb44baf05b0277a633c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86034a59afc0a8e03ba96544a53a4367') in 0.067102 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Candlestick_Triple.prefab
-  artifactKey: Guid(64939b40b6058444ca53f90c5165e557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Candlestick_Triple.prefab using Guid(64939b40b6058444ca53f90c5165e557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b44ebf9b8c8ce7a77bd2f58de8ea0f9') in 0.073069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Curtain_1.prefab
-  artifactKey: Guid(a566dcf179910b84fa23ecc3b0107570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Curtain_1.prefab using Guid(a566dcf179910b84fa23ecc3b0107570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989e688277a5d1eaa889b3c8f89b2bfd') in 0.094077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Dining_Room_Chair.prefab
-  artifactKey: Guid(64d47f7391400af4ba4894c43053ad9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Dining_Room_Chair.prefab using Guid(64d47f7391400af4ba4894c43053ad9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e66d69662fbfa36b9426e295e26bb3') in 0.068659 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Clothes_Hanger.prefab
-  artifactKey: Guid(3b1a012de065c9d448244104e4f6f6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Clothes_Hanger.prefab using Guid(3b1a012de065c9d448244104e4f6f6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61d6ee0be54c44e611043b9a069de5f') in 0.065605 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Bathroom_Heater.prefab
-  artifactKey: Guid(88dd7a3c7df6c784dab30581576ba489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Bathroom_Heater.prefab using Guid(88dd7a3c7df6c784dab30581576ba489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c4028a854c207ee599ee1259c48803') in 0.075619 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Fireplace_Part_5.prefab
-  artifactKey: Guid(88628cd6e7ef00c43a7060dae047119a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Fireplace_Part_5.prefab using Guid(88628cd6e7ef00c43a7060dae047119a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4818bb9dcd261ce132d02cbdcb17a389') in 0.073723 seconds 
+  Time since last request: 0.000082 seconds.
+  path: Assets/Art/Textures/Tiles_016_normal.jpg
+  artifactKey: Guid(dfb834d2c416f4245aeb5ae31d6a62ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Tiles_016_normal.jpg using Guid(dfb834d2c416f4245aeb5ae31d6a62ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '971e5ba1dd09c1b425fdf3dd4f34b0b1') in 0.031634 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000057 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Fish_Statue2.prefab
-  artifactKey: Guid(996ec66a22d711d4d9b99cc5c0e61e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Fish_Statue2.prefab using Guid(996ec66a22d711d4d9b99cc5c0e61e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ff533dd17db9e836e3edd38cfb0ded') in 0.070953 seconds 
+  path: Assets/Art/Textures/Concrete_017_normal.jpg
+  artifactKey: Guid(8d47305c168ddc4478ded9029a128116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Concrete_017_normal.jpg using Guid(8d47305c168ddc4478ded9029a128116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b03cc5bdcde00690ede191157b4c9656') in 0.026258 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000091 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Drink_5.prefab
-  artifactKey: Guid(1225e9bd6673aeb4d95e110ac82ce776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Drink_5.prefab using Guid(1225e9bd6673aeb4d95e110ac82ce776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a0be6356e08751918fa0bf6afd60d7') in 0.068787 seconds 
+  Time since last request: 0.000059 seconds.
+  path: Assets/Art/Textures/Tiles_Terracotta_007_ambientOcclusion.jpg
+  artifactKey: Guid(5424127caae7b934ab363fa7fc73de8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Tiles_Terracotta_007_ambientOcclusion.jpg using Guid(5424127caae7b934ab363fa7fc73de8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c573b63996838b18195166bd2c849db') in 0.021729 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Fireplace_Part_3.prefab
-  artifactKey: Guid(83e2a19fb417bde4bb3e1723dda58ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Fireplace_Part_3.prefab using Guid(83e2a19fb417bde4bb3e1723dda58ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d6a18403a640de1711475dd2fd8cbd5') in 0.069395 seconds 
+  Time since last request: 0.000046 seconds.
+  path: Assets/Art/Textures/Tiles_016_height.png
+  artifactKey: Guid(2fa3f25bf1599f84f9c92acabca1bced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Tiles_016_height.png using Guid(2fa3f25bf1599f84f9c92acabca1bced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6bb92b1bfdf0d89498060369b30c4cd') in 0.027526 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Drink_3.prefab
-  artifactKey: Guid(e14e929ed41a9aa4db05a46ca6d4a914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Drink_3.prefab using Guid(e14e929ed41a9aa4db05a46ca6d4a914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e57be46fc2ed713da5e2d65f45e76b') in 0.079186 seconds 
+  Time since last request: 21.751893 seconds.
+  path: Assets/Scenes/New Scene.unity
+  artifactKey: Guid(1db2f52f417fade41a91d1b165a04076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Scene.unity using Guid(1db2f52f417fade41a91d1b165a04076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8c2f7514a2628241fb5ea00e045417') in 0.005212 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028903 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.529 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2530ms)
+		BeginReloadAssembly (300ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1954ms)
+			LoadAssemblies (250ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (538ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (955ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (44ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (245ms)
+				ProcessInitializeOnLoadAttributes (426ms)
+				ProcessInitializeOnLoadMethodAttributes (162ms)
+				AfterProcessingInitializeOnLoad (75ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4913 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 5513.
+Memory consumption went from 194.7 MB to 194.1 MB.
+Total: 5.132400 ms (FindLiveObjects: 0.524500 ms CreateObjectMapping: 0.483800 ms MarkObjects: 3.781000 ms  DeleteObjects: 0.341600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025739 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.514 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2515ms)
+		BeginReloadAssembly (318ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (1924ms)
+			LoadAssemblies (265ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (523ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (962ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (37ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (247ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (161ms)
+				AfterProcessingInitializeOnLoad (69ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4913 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 5516.
+Memory consumption went from 194.8 MB to 194.1 MB.
+Total: 5.629600 ms (FindLiveObjects: 0.451600 ms CreateObjectMapping: 0.456200 ms MarkObjects: 4.303700 ms  DeleteObjects: 0.416700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025449 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.508 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2509ms)
+		BeginReloadAssembly (306ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (1925ms)
+			LoadAssemblies (265ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (514ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (954ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (50ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (240ms)
+				ProcessInitializeOnLoadAttributes (431ms)
+				ProcessInitializeOnLoadMethodAttributes (157ms)
+				AfterProcessingInitializeOnLoad (72ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4913 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (0.7 MB). Loaded Objects now: 5519.
+Memory consumption went from 194.8 MB to 194.1 MB.
+Total: 5.959800 ms (FindLiveObjects: 0.576000 ms CreateObjectMapping: 0.594500 ms MarkObjects: 4.386200 ms  DeleteObjects: 0.401000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Fireplace_Part_4.prefab
-  artifactKey: Guid(ddb87ea4a3c07784bbc4442f6b23b365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Fireplace_Part_4.prefab using Guid(ddb87ea4a3c07784bbc4442f6b23b365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26113703e8a3025b3b76016c67f44949') in 0.066663 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Console_4.prefab
-  artifactKey: Guid(1a628b81a0c57334babdfe2340fbed47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Console_4.prefab using Guid(1a628b81a0c57334babdfe2340fbed47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3effa8be68b73fde6cffa285dc83f0f1') in 0.070894 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Console_Gallery_1.prefab
-  artifactKey: Guid(3ee2ede8c6c7e604fbd45b38a45dd612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Console_Gallery_1.prefab using Guid(3ee2ede8c6c7e604fbd45b38a45dd612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cd62c5ca2adf67a19f3e5c7875833fc') in 0.072539 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Drink_1.prefab
-  artifactKey: Guid(4981b3b58dd9b5d4a8e3ceb34fff64b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Drink_1.prefab using Guid(4981b3b58dd9b5d4a8e3ceb34fff64b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '463d7aae6a004a8222d8144d647fc9f1') in 0.066491 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Cross_2.prefab
-  artifactKey: Guid(f7966a6115a52ed4d8b1050bb362238f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Cross_2.prefab using Guid(f7966a6115a52ed4d8b1050bb362238f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a671129dcd03df00cf9f45cca80045c') in 0.101803 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Chair_Group_1.prefab
-  artifactKey: Guid(f12a8e376db9cc2468d1d647a63f5008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Chair_Group_1.prefab using Guid(f12a8e376db9cc2468d1d647a63f5008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0d0903d8e95a55593ccdf47b9e427e') in 0.069674 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Dining_Room_Table.prefab
-  artifactKey: Guid(bd7a90277042e4242953a004cfa23325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Dining_Room_Table.prefab using Guid(bd7a90277042e4242953a004cfa23325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8668521932a1a7ec067a70b09891b99') in 0.072447 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Cross_1.prefab
-  artifactKey: Guid(3eabd90b66b672544879e337f13c5810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Cross_1.prefab using Guid(3eabd90b66b672544879e337f13c5810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4dcc46f56ac190a5d939ae2547c44cb') in 0.065332 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Breakfast_Area_Group_Chair.prefab
-  artifactKey: Guid(7b899a09af9b16440bd256320e60be5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Breakfast_Area_Group_Chair.prefab using Guid(7b899a09af9b16440bd256320e60be5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9a9a75f66686df15f1ba788f8469fa') in 0.065360 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 604.669210 seconds.
+  path: Assets/Scenes/Gameplay.unity
+  artifactKey: Guid(a43f4edcfe596e940aa88b7596945fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Gameplay.unity using Guid(a43f4edcfe596e940aa88b7596945fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd36009afab81fab72525c19919c2b57') in 0.014835 seconds 
