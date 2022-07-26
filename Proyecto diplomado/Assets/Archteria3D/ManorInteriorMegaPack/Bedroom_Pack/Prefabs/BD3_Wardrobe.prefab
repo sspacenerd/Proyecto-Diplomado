@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3288079512710395898}
   - component: {fileID: 6093141033345941796}
   - component: {fileID: 6570778547214398400}
-  m_Layer: 0
+  - component: {fileID: 7295017797986357486}
+  m_Layer: 6
   m_Name: BD3_Wardrobe_LC
-  m_TagString: Untagged
+  m_TagString: DoorL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.6760382, y: 1.0545907, z: 0.42666423}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5727057826923342912}
   m_RootOrder: 1
@@ -52,9 +54,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +71,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,6 +84,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &6570778547214398400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91,6 +98,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6854441, y: 1.7295427, z: 0.06988603}
   m_Center: {x: -0.3333133, y: 0.49674448, z: 0.025529264}
+--- !u!114 &7295017797986357486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288830044356090621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3330845372793822751
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,9 +126,10 @@ GameObject:
   - component: {fileID: 8821059016810814939}
   - component: {fileID: 8023682215075622103}
   - component: {fileID: 3703493896668535457}
-  m_Layer: 0
+  - component: {fileID: 5875319937589353656}
+  m_Layer: 6
   m_Name: BD3_Wardrobe_RB
-  m_TagString: Untagged
+  m_TagString: drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,6 +144,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.015336914, y: 0.436604, z: 0.42666784}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5727057826923342912}
   m_RootOrder: 2
@@ -147,9 +168,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -161,6 +185,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -173,6 +198,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &1237261413884765266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -238,6 +264,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.016066313, y: 0.16371596, z: 0.8173804}
   m_Center: {x: -0.6526642, y: 0.081855014, z: -0.34319317}
+--- !u!114 &5875319937589353656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3330845372793822751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470269999709870071
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,9 +292,10 @@ GameObject:
   - component: {fileID: 965312466981902082}
   - component: {fileID: 1988855145366980860}
   - component: {fileID: 529682737542891018}
-  m_Layer: 0
+  - component: {fileID: 8996329422743998349}
+  m_Layer: 6
   m_Name: BD3_Wardrobe_UB
-  m_TagString: Untagged
+  m_TagString: drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,6 +310,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.67604005, y: 0.21190889, z: 0.42666996}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5727057826923342912}
   m_RootOrder: 4
@@ -294,9 +334,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -308,6 +351,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -320,6 +364,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &212751038348231004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -385,6 +430,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03816533, y: 0.18786366, z: 0.81738055}
   m_Center: {x: -1.332987, y: 0.09392881, z: -0.34319323}
+--- !u!114 &8996329422743998349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470269999709870071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5882228142775092317
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,9 +458,10 @@ GameObject:
   - component: {fileID: 1974901464780102625}
   - component: {fileID: 7163163298858987447}
   - component: {fileID: 2393805955883467968}
-  m_Layer: 0
+  - component: {fileID: 6317179982528417724}
+  m_Layer: 6
   m_Name: BD3_Wardrobe_LB
-  m_TagString: Untagged
+  m_TagString: drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -418,6 +476,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.67604005, y: 0.436604, z: 0.42666784}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5727057826923342912}
   m_RootOrder: 0
@@ -441,9 +500,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -455,6 +517,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -467,6 +530,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &2289270700796370481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -532,6 +596,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.016066313, y: 0.16371596, z: 0.8173804}
   m_Center: {x: -0.6526642, y: 0.081855014, z: -0.34319317}
+--- !u!114 &6317179982528417724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5882228142775092317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8283986319915551019
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,9 +620,10 @@ GameObject:
   - component: {fileID: 4583927828194623184}
   - component: {fileID: 604935658978413259}
   - component: {fileID: 1980105987627871563}
-  m_Layer: 0
+  - component: {fileID: 3465522511312704209}
+  m_Layer: 6
   m_Name: BD3_Wardrobe_RC
-  m_TagString: Untagged
+  m_TagString: DoorR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,6 +638,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.6760336, y: 1.0545905, z: 0.42666423}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5727057826923342912}
   m_RootOrder: 3
@@ -584,9 +662,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -598,6 +679,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -610,6 +692,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &1980105987627871563
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -623,6 +706,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.68544424, y: 1.7295427, z: 0.06988622}
   m_Center: {x: 0.33331317, y: 0.49674454, z: 0.02552936}
+--- !u!114 &3465522511312704209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8283986319915551019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8728469865846021715
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +753,7 @@ Transform:
   m_LocalRotation: {x: 0.0000018099951, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3086521317858711068}
   - {fileID: 1274340760130123551}
@@ -686,9 +782,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -700,6 +799,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -712,6 +812,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &7404405203332251294
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 4259328614138954012}
   - component: {fileID: 3195316814093039140}
   - component: {fileID: 6519242682376407775}
-  m_Layer: 0
+  - component: {fileID: 1559427005233973501}
+  m_Layer: 6
   m_Name: Console_5_C3
-  m_TagString: Untagged
+  m_TagString: drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,6 +34,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.2619662, y: 0.84155315, z: 0.5569646}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5609252777636965915}
   m_RootOrder: 2
@@ -56,9 +58,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -70,6 +75,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -82,6 +88,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &56185448686083799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -147,6 +154,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.034680247, y: 0.17932557, z: 1.0110586}
   m_Center: {x: -0.57436043, y: 0.089659356, z: -0.45112956}
+--- !u!114 &1559427005233973501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592382735532495883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2717490720039832504
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,9 +182,10 @@ GameObject:
   - component: {fileID: 7944394215443376440}
   - component: {fileID: 8402755263177798273}
   - component: {fileID: 841335041690509287}
-  m_Layer: 0
+  - component: {fileID: 2179945907275842261}
+  m_Layer: 6
   m_Name: Console_5_C5
-  m_TagString: Untagged
+  m_TagString: drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,6 +200,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.67622083, y: 0.84155315, z: 0.5569646}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5609252777636965915}
   m_RootOrder: 4
@@ -203,9 +224,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -217,6 +241,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -229,6 +254,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &164094715118659076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -294,6 +320,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03453958, y: 0.17932557, z: 1.0110586}
   m_Center: {x: -0.5744308, y: 0.089659356, z: -0.45112956}
+--- !u!114 &2179945907275842261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2717490720039832504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3736387905757579401
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,9 +348,10 @@ GameObject:
   - component: {fileID: 5322437717587165662}
   - component: {fileID: 3102226759047114637}
   - component: {fileID: 3462660617219625682}
-  m_Layer: 0
+  - component: {fileID: 4798830291978577531}
+  m_Layer: 6
   m_Name: Console_5_C4
-  m_TagString: Untagged
+  m_TagString: drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,6 +366,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.67622083, y: 1.0522275, z: 0.5569684}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5609252777636965915}
   m_RootOrder: 3
@@ -350,9 +390,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -364,6 +407,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -376,6 +420,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &3708132795274794877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -441,6 +486,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03439641, y: 0.17932557, z: 1.0110586}
   m_Center: {x: -0.5745024, y: 0.089659356, z: -0.45112956}
+--- !u!114 &4798830291978577531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736387905757579401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5934847225089108616
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,9 +514,10 @@ GameObject:
   - component: {fileID: 8682768571957944422}
   - component: {fileID: 2712165461758795081}
   - component: {fileID: 3128729815189395371}
-  m_Layer: 0
+  - component: {fileID: 8904873866177039050}
+  m_Layer: 6
   m_Name: Console_5_C1
-  m_TagString: Untagged
+  m_TagString: drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,6 +532,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.58436733, y: 1.0665402, z: 0.55696833}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5609252777636965915}
   m_RootOrder: 0
@@ -497,9 +556,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -511,6 +573,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -523,6 +586,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &2982423096376653826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -588,6 +652,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1746857, y: 0.15070213, z: 0.086128324}
   m_Center: {x: -0.58734405, y: 0.07534776, z: 0.011335693}
+--- !u!114 &8904873866177039050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934847225089108616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6522341036800245605
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,9 +680,10 @@ GameObject:
   - component: {fileID: 514451448925160612}
   - component: {fileID: 7302041799866827216}
   - component: {fileID: 6499299358046347794}
-  m_Layer: 0
+  - component: {fileID: 4826623240687631365}
+  m_Layer: 6
   m_Name: Console_5_C2
-  m_TagString: Untagged
+  m_TagString: drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -621,6 +698,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.2619662, y: 1.0522275, z: 0.5569684}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5609252777636965915}
   m_RootOrder: 1
@@ -644,9 +722,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -658,6 +739,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -670,6 +752,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &716985865728751546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -735,6 +818,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.034050465, y: 0.17932557, z: 1.0110586}
   m_Center: {x: -0.5746753, y: 0.089659356, z: -0.45112956}
+--- !u!114 &4826623240687631365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6522341036800245605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086339f0703d5b41a9cb7456864713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8900036961565826056
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +870,7 @@ Transform:
   m_LocalRotation: {x: 0.0000018099951, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 600835036522188836}
   - {fileID: 223846968255879871}
@@ -803,9 +899,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -817,6 +916,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -829,6 +929,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &4978452388838395941
 BoxCollider:
   m_ObjectHideFlags: 0

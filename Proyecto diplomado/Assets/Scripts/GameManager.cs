@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
             hourHand.rotation = Quaternion.Euler(0, 0, -GetHour() * hoursToDegrees);
             minuteHand.rotation = Quaternion.Euler(0, 0, -GetMinutes() * minutesToDegrees);
         }
-        Debug.Log(currentTime);
+       //Debug.Log(currentTime);
 
         if (!gg)
         {

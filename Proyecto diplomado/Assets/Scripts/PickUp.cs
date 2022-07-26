@@ -24,47 +24,6 @@ public class PickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (!isGrabbed)
-            {
-                if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance))
-                {
-                    if (hit.transform.tag == "CanPickUp")
-                    {
-                        PickUpObject(hit.transform.gameObject);
-                        dotScreen.GetComponent<Image>().sprite = hand;
-                        isGrabbed = true;
-                    }
-                    else
-                    {
-                        dotScreen.GetComponent<Image>().sprite = dot;
-                    }
-                }
-            }
-            else if(inventorySystemReference.GetComponent<InventorySystem>().isOpen == false)
-            {
-                LeaveObject(hit.transform.gameObject);
-                isGrabbed = false;
-            }
-        }
-
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (!isGrabbed)
-            {
-                if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance))
-                {
-                    if (hit.transform.tag == "CanPickUp")
-                    {
-                        hit.transform.gameObject.GetComponent<ItemPickUp>().PickUp();
-                    }
-                }
-            }
-        }*/
-
         if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, layerMask) && GameManager.gameIsPaused == false)
         {
             if(hit.transform.tag == "CanPickUp")
@@ -88,6 +47,12 @@ public class PickUp : MonoBehaviour
                 {
                     PickUpObject(hit.transform.gameObject);
                     isGrabbed = true;
+                }
+                if (Input.GetKeyDown(KeyCode.E) && hit.transform.GetComponent<InteractionManager>())
+                {
+
+                     hit.transform.gameObject.GetComponent<InteractionManager>().Interaction();
+
                 }
             }
             else if (inventorySystemReference.GetComponent<InventorySystem>().isOpen == false && Input.GetMouseButtonDown(0))
