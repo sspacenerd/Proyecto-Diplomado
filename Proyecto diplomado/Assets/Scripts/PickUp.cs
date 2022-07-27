@@ -13,7 +13,7 @@ public class PickUp : MonoBehaviour
     bool isGrabbed;
     RaycastHit hit;
     GameObject inventorySystemReference;
-    private LayerMask layerMask = 1 << 6;
+    private LayerMask interactionLayer = 1 << 6, pickUpLayer = 1 << 7, pickedUpLayer = 1 << 8;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +24,43 @@ public class PickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, layerMask) && GameManager.gameIsPaused == false)
+        if (Input.GetMouseButtonDown(0))
         {
-            if(hit.transform.tag == "CanPickUp")
+            if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false)
+            {
+                if (!isGrabbed && hit.transform.tag == "CanPickUp")
+                {
+                    PickUpObject(hit.transform.gameObject);
+                    isGrabbed = true;
+                }
+                else if (inventorySystemReference.GetComponent<InventorySystem>().isOpen == false && Input.GetMouseButtonDown(0) && hit.transform.gameObject == grabbedObject)
+                {
+                    LeaveObject(hit.transform.gameObject);
+                    isGrabbed = false;
+                    grabbedObject = null;
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false)
+            {
+                if (!isGrabbed && hit.transform.tag == "CanPickUp")
+                {
+                    hit.transform.gameObject.GetComponent<ItemPickUp>().PickUp();
+                }
+                if (hit.transform.GetComponent<InteractionManager>())
+                {
+
+                    hit.transform.gameObject.GetComponent<InteractionManager>().Interaction();
+
+                }
+            }
+        }
+        /*
+        if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, raycastLayerMask) && GameManager.gameIsPaused == false)
+        {
+            if (hit.transform.tag == "CanPickUp")
             {
                 dotScreen.SetActive(false);
                 handScreen.SetActive(true);
@@ -55,10 +89,11 @@ public class PickUp : MonoBehaviour
 
                 }
             }
-            else if (inventorySystemReference.GetComponent<InventorySystem>().isOpen == false && Input.GetMouseButtonDown(0))
+            else if (inventorySystemReference.GetComponent<InventorySystem>().isOpen == false && Input.GetMouseButtonDown(0) && hit.transform.gameObject == grabbedObject)
             {
                 LeaveObject(hit.transform.gameObject);
                 isGrabbed = false;
+                grabbedObject = null;
             }
         }
         else
@@ -66,6 +101,7 @@ public class PickUp : MonoBehaviour
             dotScreen.SetActive(true);
             handScreen.SetActive(false);
         }
+        */
         if (isGrabbed && Input.GetKey(KeyCode.R) && GameManager.gameIsPaused == false)
         {
             RotateObject(hit.transform.gameObject);
@@ -78,6 +114,8 @@ public class PickUp : MonoBehaviour
     }
     void PickUpObject(GameObject objectToPick)
     {
+        grabbedObject = objectToPick;
+        grabbedObject.layer = LayerMask.NameToLayer("pickedUp");
         objectToPick.GetComponent<Rigidbody>().isKinematic = true;
         objectToPick.transform.position = pickUpGameObject.transform.position;
         objectToPick.transform.LookAt(player.transform.position);
@@ -99,6 +137,7 @@ public class PickUp : MonoBehaviour
     }
     void LeaveObject(GameObject objectToLeave)
     {
+        grabbedObject.layer = LayerMask.NameToLayer("PickUp");
         objectToLeave.GetComponent<Rigidbody>().isKinematic = false;
         Physics.IgnoreCollision(objectToLeave.GetComponent<Collider>(), player.transform.GetComponent<Collider>(), false);
         player.transform.GetComponent<PlayerController>().mouseSensitivity = 3;
@@ -107,7 +146,7 @@ public class PickUp : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.DrawRay(transform.position, player.transform.GetComponentInChildren<Camera>().transform.forward * 100);
+        Gizmos.DrawRay(transform.position, player.transform.GetComponentInChildren<Camera>().transform.forward * 3);
         Gizmos.color = Color.green;
     }
 }
