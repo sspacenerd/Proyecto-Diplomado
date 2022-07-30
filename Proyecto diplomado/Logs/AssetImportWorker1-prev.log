@@ -15,7 +15,7 @@ D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63252
+61806
 Successfully changed project path to: D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
 D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 172.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 302.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -63,89 +63,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.058912 seconds.
+Registered in 0.053664 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 145.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 131.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.259 seconds
+- Completed reload, in  1.280 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1260ms)
-		BeginReloadAssembly (188ms)
+	ReloadAssembly (1280ms)
+		BeginReloadAssembly (191ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (789ms)
-			LoadAssemblies (170ms)
+		EndReloadAssembly (804ms)
+			LoadAssemblies (174ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (170ms)
+			SetupTypeCache (208ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (459ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (445ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
+				InitializePlatformSupportModulesInManaged (22ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (145ms)
+				RefreshPlugins (131ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (223ms)
-				ProcessInitializeOnLoadMethodAttributes (68ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (82ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.032782 seconds.
+Registered in 0.025766 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 156.09 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 263.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.336 seconds
+- Completed reload, in  3.009 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2337ms)
-		BeginReloadAssembly (214ms)
+	ReloadAssembly (3010ms)
+		BeginReloadAssembly (275ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1853ms)
-			LoadAssemblies (200ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (2342ms)
+			LoadAssemblies (295ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (457ms)
+			SetupTypeCache (594ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (101ms)
-			SetupLoadedEditorAssemblies (1027ms)
+			RebuildScriptCaches (157ms)
+			SetupLoadedEditorAssemblies (1230ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (156ms)
-				BeforeProcessingInitializeOnLoad (235ms)
-				ProcessInitializeOnLoadAttributes (437ms)
-				ProcessInitializeOnLoadMethodAttributes (121ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (264ms)
+				BeforeProcessingInitializeOnLoad (341ms)
+				ProcessInitializeOnLoadAttributes (399ms)
+				ProcessInitializeOnLoadMethodAttributes (142ms)
 				AfterProcessingInitializeOnLoad (55ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 2.81 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 3.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5049 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 36 unused Assets / (0.7 MB). Loaded Objects now: 5505.
-Memory consumption went from 199.4 MB to 198.7 MB.
-Total: 7.021700 ms (FindLiveObjects: 0.553400 ms CreateObjectMapping: 0.547300 ms MarkObjects: 5.392100 ms  DeleteObjects: 0.527600 ms)
+Memory consumption went from 199.6 MB to 198.9 MB.
+Total: 5.934000 ms (FindLiveObjects: 0.628100 ms CreateObjectMapping: 0.732600 ms MarkObjects: 3.647600 ms  DeleteObjects: 0.923700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,59 +159,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 570531.452028 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Models/Bar_Desk_Chair.fbx
-  artifactKey: Guid(acb3ca8877fd16b4196b8802934c272b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Models/Bar_Desk_Chair.fbx using Guid(acb3ca8877fd16b4196b8802934c272b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53197bb627b8ff4cff7801fffb2d7eb') in 0.583336 seconds 
+  Time since last request: 57333.949340 seconds.
+  path: Assets/Art/Materials/Metal_Gold_001_metallic.jpg
+  artifactKey: Guid(69437ce361e34ff408c8fa5523e178ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Metal_Gold_001_metallic.jpg using Guid(69437ce361e34ff408c8fa5523e178ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573a4f2dc66f554cbeeaf13678d9c8c0') in 0.147312 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Models/Cabinet_2.fbx
-  artifactKey: Guid(95efae5e6e0b26a4cae353046d50dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Models/Cabinet_2.fbx using Guid(95efae5e6e0b26a4cae353046d50dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30cab7b0a182507e00b813ac8c648a1') in 2.984243 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Models/Bath_Sink_3.fbx
-  artifactKey: Guid(1b5228dffc3d4bc4aa4a5e5fed7b2097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Models/Bath_Sink_3.fbx using Guid(1b5228dffc3d4bc4aa4a5e5fed7b2097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68bf975d011ae92b052e556c2d9c3c8f') in 1.101439 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Models/Bath_Sink_4.fbx
-  artifactKey: Guid(40b8ad4b6672f0a49a12346123a48c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Models/Bath_Sink_4.fbx using Guid(40b8ad4b6672f0a49a12346123a48c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f99f2124ecaf32cbce60765240e42d3b') in 1.544843 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Models/BD3_Cabinet.fbx
-  artifactKey: Guid(917e537befd3a7649a01dfbabe976d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Models/BD3_Cabinet.fbx using Guid(917e537befd3a7649a01dfbabe976d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f917be865b3d662348de786bfa09eac') in 1.495030 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Models/Rug1.fbx
-  artifactKey: Guid(10fa6a799d89f884282587eb6b16ae6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Models/Rug1.fbx using Guid(10fa6a799d89f884282587eb6b16ae6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e7d28a152d7ccb5c13e7688ab8c4e2') in 1.043547 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000114 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Rug_Pack_Rug1_Normal.tga
-  artifactKey: Guid(93d7653b69d97c44bb554be863b189e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Rug_Pack_Rug1_Normal.tga using Guid(93d7653b69d97c44bb554be863b189e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18b6b28ad7f1b08a873299678ea3c21') in 0.115844 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Materials/BD3_Cabinet.mat
-  artifactKey: Guid(dc5b7b1e4a65b664f986c452ed18474a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Materials/BD3_Cabinet.mat using Guid(dc5b7b1e4a65b664f986c452ed18474a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65c72341c3fbb9d68ad2145bf88304b') in 0.070391 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Models/BD4_Cabinet.fbx
-  artifactKey: Guid(c6668a1c197d40c47ac79c7954e932ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Models/BD4_Cabinet.fbx using Guid(c6668a1c197d40c47ac79c7954e932ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bae5327bf66308b56e854b001abea9') in 0.116283 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Materials/Metal_Gold_001_ambientOcclusion.jpg
+  artifactKey: Guid(8495877514d9fbb419d3bd052a70a644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Metal_Gold_001_ambientOcclusion.jpg using Guid(8495877514d9fbb419d3bd052a70a644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd93451eeeb705c96dd7fccef93489d6d') in 0.024821 seconds 
