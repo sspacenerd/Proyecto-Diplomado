@@ -35,7 +35,7 @@ public class InventorySystem : MonoBehaviour
                 inventoryReference.transform.DOLocalMoveX(-881, 1);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                player.GetComponent<PlayerController>().mouseSensitivity = 0;
+                PlayerController.mouseSensitivity = 0;
                 player.GetComponent<PlayerController>().walkSpeed = 0;
                 player.GetComponentInChildren<PickUp>().rayDistance = 0;
                 isOpen = true;
@@ -49,7 +49,7 @@ public class InventorySystem : MonoBehaviour
                 inventoryReference.transform.DOLocalMoveX(-1049, 1);
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-                player.GetComponent<PlayerController>().mouseSensitivity = 3;
+                PlayerController.mouseSensitivity = Settings.currentMouseSensitivity;
                 player.GetComponent<PlayerController>().walkSpeed = 5;
                 player.GetComponentInChildren<PickUp>().rayDistance = 3;
                 isOpen = false;

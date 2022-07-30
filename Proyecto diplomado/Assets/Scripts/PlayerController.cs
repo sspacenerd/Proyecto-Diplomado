@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] private Transform myCam = null;
-    public float mouseSensitivity = 3;
+    public static float mouseSensitivity = 3;
     public float walkSpeed;
     [SerializeField] private float gravity = -13f;
     [SerializeField][Range(0.0f, 0.5f)] private float moveSmoothTime = 0.3f; 
@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log(mouseSensitivity);
         controller = GetComponent<CharacterController>();
         if (lockCursor)
         {

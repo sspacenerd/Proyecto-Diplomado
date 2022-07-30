@@ -7,7 +7,7 @@ public class InteractionManager : MonoBehaviour
 {
     bool isOpen;
     float initialPos;
-
+    private Transform parent;
     private void Start()
     {
         initialPos = transform.localPosition.z;
@@ -65,11 +65,16 @@ public class InteractionManager : MonoBehaviour
         if(collision.transform.tag == "CanPickUp")
         {
             collision.transform.parent = this.transform;
+
         }
     }
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.transform.tag == "CanPickUp")
+        if (collision.transform.tag == "CanPickUp" && PickUp.pickedGameObejct != null)
+        {
+            collision.transform.parent = PickUp.pickedGameObejct.transform.GetComponent<Transform>();
+        }
+        else if (collision.transform.tag == "CanPickUp" && PickUp.pickedGameObejct == null)
         {
             collision.transform.parent = null;
         }

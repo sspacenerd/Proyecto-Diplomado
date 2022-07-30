@@ -5,16 +5,20 @@ using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
-    [SerializeField] private GameObject dotScreen, handScreen;
-    public float rayDistance = 3f;
-    public GameObject player, grabbedObject;
+    [SerializeField] private GameObject dotScreen, handScreen, player;
+    [SerializeField] private Transform holdGameObject;
+
     private Camera myCam;
-    public Transform pickUpGameObject;
-    bool isGrabbed;
-    RaycastHit hit;
-    GameObject inventorySystemReference;
+    private bool isPicked;
+    private RaycastHit hit;
+    private GameObject inventorySystemReference;
     private LayerMask interactionLayer = 1 << 6, pickUpLayer = 1 << 7, pickedUpLayer = 1 << 8;
-    // Start is called before the first frame update
+
+    public float rayDistance = 3f;
+
+    public static GameObject pickedGameObejct; 
+
+
     void Start()
     {
         myCam = GetComponent<Camera>();
@@ -28,16 +32,16 @@ public class PickUp : MonoBehaviour
         {
             if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false)
             {
-                if (!isGrabbed && hit.transform.tag == "CanPickUp")
+                if (!isPicked && hit.transform.tag == "CanPickUp")
                 {
                     PickUpObject(hit.transform.gameObject);
-                    isGrabbed = true;
+                    isPicked = true;
                 }
-                else if (inventorySystemReference.GetComponent<InventorySystem>().isOpen == false && Input.GetMouseButtonDown(0) && hit.transform.gameObject == grabbedObject)
+                else if (inventorySystemReference.GetComponent<InventorySystem>().isOpen == false && Input.GetMouseButtonDown(0) && hit.transform.gameObject == pickedGameObejct)
                 {
                     LeaveObject(hit.transform.gameObject);
-                    isGrabbed = false;
-                    grabbedObject = null;
+                    isPicked = false;
+                    pickedGameObejct = null;
                 }
             }
         }
@@ -45,7 +49,7 @@ public class PickUp : MonoBehaviour
         {
             if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false)
             {
-                if (!isGrabbed && hit.transform.tag == "CanPickUp")
+                if (!isPicked && hit.transform.tag == "CanPickUp")
                 {
                     hit.transform.gameObject.GetComponent<ItemPickUp>().PickUp();
                 }
@@ -102,11 +106,11 @@ public class PickUp : MonoBehaviour
             handScreen.SetActive(false);
         }
         */
-        if (isGrabbed && Input.GetKey(KeyCode.R) && GameManager.gameIsPaused == false)
+        if (isPicked && Input.GetKey(KeyCode.R) && GameManager.gameIsPaused == false)
         {
             RotateObject(hit.transform.gameObject);
         }
-        if(isGrabbed && Input.GetKeyUp(KeyCode.R) && GameManager.gameIsPaused == false)
+        if(isPicked && Input.GetKeyUp(KeyCode.R) && GameManager.gameIsPaused == false)
         {
             StopRotating();
         }
@@ -114,33 +118,33 @@ public class PickUp : MonoBehaviour
     }
     void PickUpObject(GameObject objectToPick)
     {
-        grabbedObject = objectToPick;
-        grabbedObject.layer = LayerMask.NameToLayer("pickedUp");
+        pickedGameObejct = objectToPick;
+        pickedGameObejct.layer = LayerMask.NameToLayer("pickedUp");
         objectToPick.GetComponent<Rigidbody>().isKinematic = true;
-        objectToPick.transform.position = pickUpGameObject.transform.position;
+        objectToPick.transform.position = holdGameObject.transform.position;
         objectToPick.transform.LookAt(player.transform.position);
         Physics.IgnoreCollision(objectToPick.GetComponent<Collider>(), player.transform.GetComponent<Collider>(), true);
         objectToPick.transform.parent = myCam.transform;
     }
     void RotateObject(GameObject objectToRotate)
     {
-        player.transform.GetComponent<PlayerController>().mouseSensitivity = 0;
+        PlayerController.mouseSensitivity = 0;
         objectToRotate.transform.localRotation = Quaternion.Euler(Input.mousePosition.y, -Input.mousePosition.x, 0);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
     }
     void StopRotating()
     {
-        player.transform.GetComponent<PlayerController>().mouseSensitivity = 3;
+        PlayerController.mouseSensitivity = Settings.currentMouseSensitivity;
         Cursor.lockState = CursorLockMode.Locked;
 
     }
     void LeaveObject(GameObject objectToLeave)
     {
-        grabbedObject.layer = LayerMask.NameToLayer("PickUp");
+        pickedGameObejct.layer = LayerMask.NameToLayer("PickUp");
         objectToLeave.GetComponent<Rigidbody>().isKinematic = false;
         Physics.IgnoreCollision(objectToLeave.GetComponent<Collider>(), player.transform.GetComponent<Collider>(), false);
-        player.transform.GetComponent<PlayerController>().mouseSensitivity = 3;
+        PlayerController.mouseSensitivity = Settings.currentMouseSensitivity;
         Cursor.lockState = CursorLockMode.Locked;
         objectToLeave.transform.parent = null;
     }

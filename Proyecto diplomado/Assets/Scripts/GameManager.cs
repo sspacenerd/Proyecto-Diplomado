@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static bool gameIsPaused;
-    [SerializeField] private GameObject menu;
+    [SerializeField] private GameObject menu, settings;
 
     public const int hoursInDay = 24, minutesInHour = 60;
     public float dayDuration = 30f, speed;
@@ -61,8 +61,13 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            settings.SetActive(false);
             menu.SetActive(false);
         }
+    }
+    public void CloseGame()
+    {
+        Application.Quit();
     }
     public float GetHour()
     {
