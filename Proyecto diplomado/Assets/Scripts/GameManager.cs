@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
+    public static GameManager gameManagerInstance;
     public static bool gameIsPaused;
     [SerializeField] private GameObject menu, settings;
+    [SerializeField] private Image imageToFade;
 
     public const int hoursInDay = 24, minutesInHour = 60;
     public float dayDuration = 30f, speed;
@@ -17,6 +20,15 @@ public class GameManager : MonoBehaviour
     const float hoursToDegrees = 360 / 12, minutesToDegrees = 360 / 60;
     
     bool manipulatinTime, gg;
+
+    private void Awake()
+    {
+        gameManagerInstance = this;
+    }
+    private void Start()
+    {
+        Fade(imageToFade, 0, 1);
+    }
 
     // Update is called once per frame
     void Update()
@@ -95,6 +107,24 @@ public class GameManager : MonoBehaviour
             hour = 12;
         }
         return hour.ToString("00") + ":" + Mathf.FloorToInt(GetMinutes()).ToString("00") + " " + abbreviation;
+    }
+    public void Fade(Image fadeGameObject, float amountOfFade, float timeOfFade)
+    {
+        fadeGameObject.DOFade(amountOfFade, timeOfFade).SetUpdate(true);
+    }
+
+
+    public void QuitGame()
+    {
+        StartCoroutine(Quit());
+    }
+    IEnumerator Quit()
+    {
+        Fade(imageToFade, 1, 1);
+        yield return new WaitForSecondsRealtime(1);
+        PauseGame();
+        SceneManager.LoadScene(0);
+        yield break;
     }
 
 }

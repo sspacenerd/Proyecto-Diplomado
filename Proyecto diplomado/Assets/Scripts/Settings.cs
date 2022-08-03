@@ -11,13 +11,8 @@ public class Settings : MonoBehaviour
     private void Start()
     {
         currentMouseSensitivity = PlayerController.mouseSensitivity;
+        ES3.Load("masterMusic", audioMixer);
     }
-    private void Update()
-    {
-
-            Debug.Log(currentMouseSensitivity);
-    }
-
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
