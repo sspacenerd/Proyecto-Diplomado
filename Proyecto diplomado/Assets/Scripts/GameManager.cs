@@ -4,12 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 public class GameManager : MonoBehaviour
 {
     public static GameManager gameManagerInstance;
     public static bool gameIsPaused;
+
     [SerializeField] private GameObject menu, settings;
     [SerializeField] private Image imageToFade;
+    [SerializeField] private Volume volume;
 
     public const int hoursInDay = 24, minutesInHour = 60;
     public float dayDuration = 30f, speed;
@@ -21,6 +25,10 @@ public class GameManager : MonoBehaviour
     
     bool manipulatinTime, gg;
 
+    DepthOfField depth;
+
+    private Camera myCam;
+
     private void Awake()
     {
         gameManagerInstance = this;
@@ -28,6 +36,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Fade(imageToFade, 0, 1);
+        volume.profile.TryGet(out depth);
+        myCam = Camera.main;
     }
 
     // Update is called once per frame
@@ -63,18 +73,22 @@ public class GameManager : MonoBehaviour
         gameIsPaused = !gameIsPaused;
         if (gameIsPaused)
         {
+            depth.active = true;
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             menu.SetActive(true);
+            myCam.fieldOfView = 65;
         }
         else
         {
+            depth.active = false;
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             settings.SetActive(false);
             menu.SetActive(false);
+            myCam.fieldOfView = 60;
         }
     }
     public void CloseGame()

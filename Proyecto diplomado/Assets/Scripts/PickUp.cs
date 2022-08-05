@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour
     private Camera myCam;
     private bool isPicked;
     private RaycastHit hit;
-    private GameObject inventorySystemReference;
+    private InventorySystem inventorySystemReference;
     private LayerMask interactionLayer = 1 << 6, pickUpLayer = 1 << 7, pickedUpLayer = 1 << 8;
 
     public float rayDistance = 3f;
@@ -22,7 +22,7 @@ public class PickUp : MonoBehaviour
     void Start()
     {
         myCam = GetComponent<Camera>();
-        inventorySystemReference = GameObject.FindGameObjectWithTag("GameManager");
+        inventorySystemReference = GameObject.FindGameObjectWithTag("GameManager").GetComponent<InventorySystem>();
     }
 
     // Update is called once per frame
@@ -58,6 +58,16 @@ public class PickUp : MonoBehaviour
 
                     hit.transform.gameObject.GetComponent<InteractionManager>().Interaction();
 
+                }
+                if(hit.transform.tag == "Door")
+                {
+                    for (int i = 0; i < inventorySystemReference.GetComponent<InventorySystem>().items.Count; i++)
+                    {
+                        if((inventorySystemReference.items[i].itemType == Item.ItemType.key))
+                        {
+                            inventorySystemReference.Remove(inventorySystemReference.items[i]);
+                        }
+                    }
                 }
             }
         }

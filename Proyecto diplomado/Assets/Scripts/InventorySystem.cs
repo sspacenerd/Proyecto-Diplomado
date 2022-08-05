@@ -74,7 +74,7 @@ public class InventorySystem : MonoBehaviour
         {
             GameObject obj = Instantiate(itemReferencePrefab, itemContent);
             var itemIcon = obj.transform.Find("Icon").GetComponent<Image>();
-            var itemName = obj.transform.Find("ItemName").GetComponent<Text>();
+            //var itemName = obj.transform.Find("ItemName").GetComponent<Text>()
 
            // itemName.text = item.itemName;
             itemIcon.sprite = item.icon;

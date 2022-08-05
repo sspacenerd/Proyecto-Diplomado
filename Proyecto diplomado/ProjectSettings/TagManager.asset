@@ -9,6 +9,7 @@ TagManager:
   - drawer
   - DoorR
   - DoorL
+  - Door
   layers:
   - Default
   - TransparentFX
