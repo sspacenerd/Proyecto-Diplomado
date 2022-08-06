@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Image imageToFade;
     [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private Slider volume, sensibility;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -20,6 +21,8 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         imageToFade.DOFade(0, 1);
+        ES3.Load("Sensibility", sensibility.value);
+        //audioMixer.SetFloat("Volume", ES3.Load("volume"));
     }
     public void StartGame()
     {
@@ -33,6 +36,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
         yield break;
     }
+    private void Update()
+    {
+    }
     public void QuitGame()
     {
         Application.Quit();
@@ -43,7 +49,10 @@ public class MainMenu : MonoBehaviour
     }
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
     }
-
+    public void SetSensitivity(float newSpeed)
+    {
+        ES3.Save("Sensibility", sensibility.value);
+    }
 }

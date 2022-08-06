@@ -145,7 +145,7 @@ public class PickUp : MonoBehaviour
     }
     void StopRotating()
     {
-        PlayerController.mouseSensitivity = Settings.currentMouseSensitivity;
+        PlayerController.mouseSensitivity = Settings.currentMouseSensibility;
         Cursor.lockState = CursorLockMode.Locked;
 
     }
@@ -154,7 +154,7 @@ public class PickUp : MonoBehaviour
         pickedGameObejct.layer = LayerMask.NameToLayer("PickUp");
         objectToLeave.GetComponent<Rigidbody>().isKinematic = false;
         Physics.IgnoreCollision(objectToLeave.GetComponent<Collider>(), player.transform.GetComponent<Collider>(), false);
-        PlayerController.mouseSensitivity = Settings.currentMouseSensitivity;
+        PlayerController.mouseSensitivity = Settings.currentMouseSensibility;
         Cursor.lockState = CursorLockMode.Locked;
         objectToLeave.transform.parent = null;
     }

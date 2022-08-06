@@ -2,25 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class Settings : MonoBehaviour
 {
     [SerializeField] private AudioMixer audioMixer;
-    [SerializeField] public static float currentMouseSensitivity;
+    [SerializeField] public static float currentMouseSensibility;
+    public Slider sensibility;
 
     private void Start()
     {
-        currentMouseSensitivity = PlayerController.mouseSensitivity;
-        ES3.Load("masterMusic", audioMixer);
+        currentMouseSensibility = PlayerController.mouseSensitivity;
+        sensibility.value = currentMouseSensibility;
     }
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
     }
-    public void SetSensitivity(float newSpeed)
+    public void SetSensibility(float newSpeed)
     {
         PlayerController.mouseSensitivity = newSpeed;
-        currentMouseSensitivity = PlayerController.mouseSensitivity;
+        currentMouseSensibility = PlayerController.mouseSensitivity;
     }
     public void SetFullScreen(bool isFullScreen)
     {

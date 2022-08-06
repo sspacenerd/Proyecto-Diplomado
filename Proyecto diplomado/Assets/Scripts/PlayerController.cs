@@ -6,11 +6,11 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] private Transform myCam = null;
-    public static float mouseSensitivity = 3;
+    public static float mouseSensitivity;
     public float walkSpeed;
     [SerializeField] private float gravity = -13f;
     [SerializeField][Range(0.0f, 0.5f)] private float moveSmoothTime = 0.3f; 
-    [SerializeField][Range(0.0f, 0.5f)] private float mouseSmoothTime = 0.3f; 
+    [SerializeField][Range(0.0f, 0.5f)] private float mouseSmoothTime = 0.3f;
 
     [SerializeField] private bool lockCursor = true;
 
@@ -25,11 +25,13 @@ public class PlayerController : MonoBehaviour
 
     CharacterController controller;
 
-
+    private void Awake()
+    {
+        mouseSensitivity = (float)ES3.Load("Sensibility");
+    }
 
     private void Start()
     {
-        Debug.Log(mouseSensitivity);
         controller = GetComponent<CharacterController>();
         if (lockCursor)
         {
@@ -41,6 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         PlayerMovement();
         MouseLook();
+        Debug.Log(ES3.Load("Sensibility"));
 
     }
     void PlayerMovement()
