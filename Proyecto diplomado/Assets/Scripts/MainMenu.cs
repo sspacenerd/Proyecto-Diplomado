@@ -21,8 +21,9 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         imageToFade.DOFade(0, 1);
-        ES3.Load("Sensibility", sensibility.value);
-        //audioMixer.SetFloat("Volume", ES3.Load("volume"));
+        sensibility.value = (float)ES3.Load("Sensibility");
+        volume.value = (float)ES3.Load("Volume");
+        //audioMixer.SetFloat("volume", Mathf.Log10((float)ES3.Load("Volume", 1)) * 20);
     }
     public void StartGame()
     {
@@ -31,13 +32,11 @@ public class MainMenu : MonoBehaviour
 
     IEnumerator StartGameCoroutine()
     {
+        ES3.Save("Volume", volume.value);
         imageToFade.DOFade(1, 1);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(1);
         yield break;
-    }
-    private void Update()
-    {
     }
     public void QuitGame()
     {
@@ -51,7 +50,7 @@ public class MainMenu : MonoBehaviour
     {
         audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
     }
-    public void SetSensitivity(float newSpeed)
+    public void SetSensitivity()
     {
         ES3.Save("Sensibility", sensibility.value);
     }

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     public const int hoursInDay = 24, minutesInHour = 60;
     public float dayDuration = 30f, speed;
+    public Settings mySettings;
 
     float totalTime = 0, currentTime = 0, goToSpeed;
 
@@ -28,6 +29,8 @@ public class GameManager : MonoBehaviour
     DepthOfField depth;
 
     private Camera myCam;
+
+
 
     private void Awake()
     {
@@ -45,6 +48,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("g");
             PauseGame();
         }
 
@@ -135,6 +139,8 @@ public class GameManager : MonoBehaviour
     IEnumerator Quit()
     {
         Fade(imageToFade, 1, 1);
+        ES3.Save("Sensibility", Settings.currentMouseSensibility);
+        ES3.Save("Volume", mySettings.volume.value);
         yield return new WaitForSecondsRealtime(1);
         PauseGame();
         SceneManager.LoadScene(0);

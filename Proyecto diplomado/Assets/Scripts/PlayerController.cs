@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         PlayerMovement();
         MouseLook();
-        Debug.Log(ES3.Load("Sensibility"));
+       // Debug.Log(ES3.Load("Sensibility"));
 
     }
     void PlayerMovement()
