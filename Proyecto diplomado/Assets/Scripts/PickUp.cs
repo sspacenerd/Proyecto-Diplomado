@@ -45,13 +45,13 @@ public class PickUp : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)) //Si yo presiono la E
         {
-            if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false)
+            if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false) //Y si yo lanzo un rayo desde mi posicion hasta el fordward de la camara
             {
-                if (!isPicked && hit.transform.tag == "CanPickUp")
+                if (!isPicked && hit.transform.tag == "CanPickUp") //Si yo no tengo nada agarrado y el tag de HIT es CanPickUp
                 {
-                    hit.transform.gameObject.GetComponent<ItemPickUp>().PickUp();
+                    hit.transform.gameObject.GetComponent<ItemPickUp>().PickUp(); //Es para agarrar algo
                 }
                 if (hit.transform.GetComponent<InteractionManager>())
                 {
