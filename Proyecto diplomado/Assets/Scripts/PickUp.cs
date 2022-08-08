@@ -63,15 +63,25 @@ public class PickUp : MonoBehaviour
                     hit.transform.gameObject.GetComponent<InteractionManager>().Interaction();
 
                 }
-                if(hit.transform.tag == "Door")
+                switch (hit.transform.tag)
                 {
-                    for (int i = 0; i < inventorySystemReference.GetComponent<InventorySystem>().items.Count; i++)
-                    {
-                        if((inventorySystemReference.items[i].itemType == Item.ItemType.key))
+                    case "Door":
                         {
-                            inventorySystemReference.Remove(inventorySystemReference.items[i]);
+                            for (int i = 0; i < inventorySystemReference.GetComponent<InventorySystem>().items.Count; i++)
+                            {
+                                if ((inventorySystemReference.items[i].itemType == Item.ItemType.key))
+                                {
+                                    inventorySystemReference.Remove(inventorySystemReference.items[i]);
+                                }
+                            }
+                            break;
                         }
-                    }
+                    case "Grillo":
+                        {
+                            Destroy(hit.transform.gameObject);
+                            StartCoroutine(GameManager.gameManagerInstance.Grillo());
+                            break;
+                        }
                 }
             }
         }

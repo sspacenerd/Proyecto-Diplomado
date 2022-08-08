@@ -6,6 +6,7 @@ using DG.Tweening;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager gameManagerInstance;
@@ -16,19 +17,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Volume volume;
 
     public const int hoursInDay = 24, minutesInHour = 60;
+    const float hoursToDegrees = 360 / 12, minutesToDegrees = 360 / 60;
+
     public float dayDuration = 30f, speed;
     public Settings mySettings;
+    public Transform minuteHand, hourHand;
+    public TextMeshProUGUI grillo;
+    public int grillos;
 
-    float totalTime = 0, currentTime = 0, goToSpeed;
-
-    public RectTransform minuteHand, hourHand;
-    const float hoursToDegrees = 360 / 12, minutesToDegrees = 360 / 60;
-    
-    bool manipulatinTime, gg;
-
-    DepthOfField depth;
-
+    private float totalTime = 0, currentTime = 0, goToSpeed;
+    private bool manipulatinTime, gg;
     private Camera myCam;
+    private DepthOfField depth;
+
+
 
 
 
@@ -42,8 +44,6 @@ public class GameManager : MonoBehaviour
         volume.profile.TryGet(out depth);
         myCam = Camera.main;
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -58,15 +58,17 @@ public class GameManager : MonoBehaviour
             currentTime = totalTime % dayDuration * speed;
             hourHand.rotation = Quaternion.Euler(0, 0, -GetHour() * hoursToDegrees);
             minuteHand.rotation = Quaternion.Euler(0, 0, -GetMinutes() * minutesToDegrees);
+            //hourHand.Rotate(transform.eulerAngles + new Vector3(0, 0, -GetHour() * hoursToDegrees * Time.deltaTime));
+            //hourHand.Rotate(transform.eulerAngles + new Vector3(0, 0, -GetMinutes() * minutesToDegrees * Time.deltaTime));
         }
-       //Debug.Log(currentTime);
+        //Debug.Log(currentTime);
 
         if (!gg)
         {
             for (int i = 0; i < 5; i++)
             {
                 speed += 1;
-                
+
             }
             gg = true;
         }
@@ -107,7 +109,7 @@ public class GameManager : MonoBehaviour
     }
     public float GetMinutes()
     {
-        return (currentTime * hoursInDay * minutesInHour / dayDuration)%minutesInHour;
+        return (currentTime * hoursInDay * minutesInHour / dayDuration) % minutesInHour;
     }
 
     public string Clock12()
@@ -115,12 +117,12 @@ public class GameManager : MonoBehaviour
         int hour = Mathf.FloorToInt(GetHour());
         string abbreviation = "AM";
 
-        if(hour >= 12)
+        if (hour >= 12)
         {
             abbreviation = "PM";
             hour -= 12;
         }
-        if(hour == 0)
+        if (hour == 0)
         {
             hour = 12;
         }
@@ -147,5 +149,14 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
+    public IEnumerator Grillo()
+    {
+        grillos++;
+        grillo.text = "GRILLOS: " + grillos + " /3";
+        grillo.DOFade(1, 3);
+        yield return new WaitForSeconds(3);
+        grillo.DOFade(0, 3);
+        yield break;
+    }
 }
 

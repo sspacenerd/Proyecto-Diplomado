@@ -11,6 +11,7 @@ TagManager:
   - DoorL
   - Door
   - Safe
+  - Grillo
   layers:
   - Default
   - TransparentFX

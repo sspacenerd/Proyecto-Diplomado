@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.5f1 (40eb3a945986) revision 4254522'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Enterprise' Language: 'es' Physical Memory: 16250 MB
+OS: 'Windows 11  (10.0.22000) 64bit CoreSingleLanguage' Language: 'es' Physical Memory: 16238 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.5f1\Editor\Unity.exe
+D:\2021.3.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker11
 -projectPath
-D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
+D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
 -logFile
 Logs/AssetImportWorker11.log
 -srvPort
-53178
-Successfully changed project path to: D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
-D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
+54461
+Successfully changed project path to: D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
+D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,111 +47,112 @@ D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 631.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 278.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Proyectos Unity/Proyecto-Diplomado/Proyecto diplomado/Assets
+[Subsystems] Discovering subsystems at path D:/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
     Vendor:   NVIDIA
-    VRAM:     4018 MB
+    VRAM:     4021 MB
     Driver:   31.0.15.1659
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Mono path[0] = 'D:/2021.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'D:/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.122382 seconds.
+Register platform support module: D:/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.021071 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 288.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 266.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.332 seconds
+- Completed reload, in  1.432 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2336ms)
-		BeginReloadAssembly (286ms)
+	ReloadAssembly (1432ms)
+		BeginReloadAssembly (247ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1575ms)
-			LoadAssemblies (261ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (962ms)
+			LoadAssemblies (236ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (317ms)
+			SetupTypeCache (209ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (126ms)
-			SetupLoadedEditorAssemblies (895ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (596ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (39ms)
+				InitializePlatformSupportModulesInManaged (15ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (289ms)
-				BeforeProcessingInitializeOnLoad (5ms)
-				ProcessInitializeOnLoadAttributes (384ms)
-				ProcessInitializeOnLoadMethodAttributes (177ms)
+				RefreshPlugins (267ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.083404 seconds.
+Registered in 0.046154 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Proyectos Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 212.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 260.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.188 seconds
+- Completed reload, in  3.603 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4194ms)
-		BeginReloadAssembly (316ms)
+	ReloadAssembly (3604ms)
+		BeginReloadAssembly (336ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (17ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (3525ms)
-			LoadAssemblies (333ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (2964ms)
+			LoadAssemblies (378ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (726ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (253ms)
-			SetupLoadedEditorAssemblies (2087ms)
+			SetupTypeCache (621ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (176ms)
+			SetupLoadedEditorAssemblies (1736ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (46ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (213ms)
-				BeforeProcessingInitializeOnLoad (351ms)
-				ProcessInitializeOnLoadAttributes (1197ms)
-				ProcessInitializeOnLoadMethodAttributes (206ms)
-				AfterProcessingInitializeOnLoad (73ms)
-				EditorAssembliesLoaded (1ms)
+				RefreshPlugins (260ms)
+				BeforeProcessingInitializeOnLoad (376ms)
+				ProcessInitializeOnLoadAttributes (887ms)
+				ProcessInitializeOnLoadMethodAttributes (150ms)
+				AfterProcessingInitializeOnLoad (44ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.22 seconds
-Refreshing native plugins compatible for Editor in 3.25 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5955 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (1.5 MB). Loaded Objects now: 6424.
-Memory consumption went from 242.0 MB to 240.5 MB.
-Total: 10.364900 ms (FindLiveObjects: 0.591800 ms CreateObjectMapping: 0.632400 ms MarkObjects: 8.588200 ms  DeleteObjects: 0.550900 ms)
+Unloading 5957 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (1.4 MB). Loaded Objects now: 6437.
+Memory consumption went from 250.1 MB to 248.6 MB.
+Total: 6.859100 ms (FindLiveObjects: 0.652700 ms CreateObjectMapping: 0.702600 ms MarkObjects: 4.806100 ms  DeleteObjects: 0.696200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -159,11 +160,65 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 836415.741541 seconds.
-  path: Assets/Scripts/EnemyAi.cs
-  artifactKey: Guid(4592ff4b5d5124e41bbde8938e7b129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/EnemyAi.cs using Guid(4592ff4b5d5124e41bbde8938e7b129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0dc6be86af330584048acf1e95fa7fd') in 0.093480 seconds 
+  Time since last request: 5497.698257 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_4.prefab
+  artifactKey: Guid(b97f4f4eb5d040745b875dfbdcd34312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_4.prefab using Guid(b97f4f4eb5d040745b875dfbdcd34312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a1c11bd7e90236d7dd834fcdb442c5') in 0.890444 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.044870 seconds.
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_41.prefab
+  artifactKey: Guid(6e8cc869386afaf42a8c3c7e03be3b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_41.prefab using Guid(6e8cc869386afaf42a8c3c7e03be3b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af5245dadd4e18f258849861834f82dc') in 0.767013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_12.prefab
+  artifactKey: Guid(78a0cb219e06e3b4297cabb622b66031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_12.prefab using Guid(78a0cb219e06e3b4297cabb622b66031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea18749da566dcf8259ad27b232cfd4e') in 0.141277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_16.prefab
+  artifactKey: Guid(b004cd3cfabfd5c4aaeee063d0b83539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_16.prefab using Guid(b004cd3cfabfd5c4aaeee063d0b83539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e27d8047e928de320d385b0449cdc347') in 0.127693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_21.prefab
+  artifactKey: Guid(801178cc223c0344ea0524df4551942c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_21.prefab using Guid(801178cc223c0344ea0524df4551942c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdbaf9c85f35fb50933cae643b50132a') in 0.215585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_32.prefab
+  artifactKey: Guid(71a94c00fb4b7544db1db60a1febc66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_32.prefab using Guid(71a94c00fb4b7544db1db60a1febc66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3b4600d3d92416c7147466f328df7e') in 0.383220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_24.prefab
+  artifactKey: Guid(b8104a5734b06df438acc69eadae9280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_24.prefab using Guid(b8104a5734b06df438acc69eadae9280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '098ff721b0c2159a22b0f893f7d9f27d') in 0.148355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_40.prefab
+  artifactKey: Guid(713b9fdfbd4401e48b0853409a9d8fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_40.prefab using Guid(713b9fdfbd4401e48b0853409a9d8fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e3ddbff938f505fadf3a647ad7a6c3b') in 0.163619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_20.prefab
+  artifactKey: Guid(68299cddee86fa14e8d2eea5c1afe128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_20.prefab using Guid(68299cddee86fa14e8d2eea5c1afe128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a292723f666b2c422b1130ebe781131') in 0.191516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_11.prefab
+  artifactKey: Guid(1f58eb2613e503d40836aff553cab4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Kitchen_Pack/Prefabs/Kitchen_Probes_11.prefab using Guid(1f58eb2613e503d40836aff553cab4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebcd1b7ee599de216f38fa99f847e153') in 0.330040 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

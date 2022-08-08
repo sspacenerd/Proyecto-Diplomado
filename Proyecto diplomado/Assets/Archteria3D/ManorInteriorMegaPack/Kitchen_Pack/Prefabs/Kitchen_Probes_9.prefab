@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2997926851335184109}
   - component: {fileID: 2655534905930372059}
   - component: {fileID: 7464455628004480083}
-  - component: {fileID: 7059068087588865814}
   m_Layer: 0
   m_Name: Kitchen_Probes_27
   m_TagString: Untagged
@@ -29,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.19349732, y: 0.11682579, z: 0.08543537}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8018801769334353353}
   m_RootOrder: 0
@@ -52,9 +52,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +69,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,20 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7059068087588865814
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4517694488338768954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -4687576270213036311, guid: 6b1e6c490f020674c9a9b2351b56765a, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6418711807856500698
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +97,7 @@ GameObject:
   - component: {fileID: 2729710302014668516}
   m_Layer: 0
   m_Name: Kitchen_Probes_9
-  m_TagString: Untagged
+  m_TagString: CanPickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,6 +112,7 @@ Transform:
   m_LocalRotation: {x: 0.0000018099951, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2997926851335184109}
   - {fileID: 7798047282568800450}
@@ -149,9 +141,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -163,6 +158,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -175,6 +171,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &2729710302014668516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -186,8 +183,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7682125, y: 0.05914244, z: 0.07704854}
-  m_Center: {x: 0.00000071525574, y: 0.44612426, z: 0.038522393}
+  m_Size: {x: 0.7682125, y: 0.05914247, z: 0.018707182}
+  m_Center: {x: 0.00000071525574, y: 0.44612426, z: 0.009351714}
 --- !u!1 &6563176808005271047
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +196,6 @@ GameObject:
   - component: {fileID: 7798047282568800450}
   - component: {fileID: 7737273764886332160}
   - component: {fileID: 7775026423561977850}
-  - component: {fileID: 4919252720270036475}
   m_Layer: 0
   m_Name: Kitchen_Probes_28
   m_TagString: Untagged
@@ -217,6 +213,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.3224011, y: 0.36360222, z: 0.041270655}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8018801769334353353}
   m_RootOrder: 1
@@ -240,9 +237,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -254,6 +254,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -266,20 +267,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4919252720270036475
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6563176808005271047}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -8714483245755235950, guid: 6b1e6c490f020674c9a9b2351b56765a, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7600810925363068157
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +279,6 @@ GameObject:
   - component: {fileID: 4453996521890450262}
   - component: {fileID: 8300366130119564752}
   - component: {fileID: 5012104158770981700}
-  - component: {fileID: 9185125620161927320}
   m_Layer: 0
   m_Name: Kitchen_Probes_29
   m_TagString: Untagged
@@ -309,6 +296,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.073499754, y: 0.23974283, z: 0.045898788}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8018801769334353353}
   m_RootOrder: 2
@@ -332,9 +320,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -346,6 +337,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -358,20 +350,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &9185125620161927320
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7600810925363068157}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 6563532351509943634, guid: 6b1e6c490f020674c9a9b2351b56765a, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8642689241948270435
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +362,6 @@ GameObject:
   - component: {fileID: 3013671824094166483}
   - component: {fileID: 9157506426240618918}
   - component: {fileID: 192552800468967720}
-  - component: {fileID: 6325060783017390269}
   m_Layer: 0
   m_Name: Kitchen_Probes_31
   m_TagString: Untagged
@@ -401,6 +379,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.3277301, y: 0.23793468, z: 0.053346302}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8018801769334353353}
   m_RootOrder: 4
@@ -424,9 +403,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -438,6 +420,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -450,20 +433,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &6325060783017390269
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8642689241948270435}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 1284744391132784025, guid: 6b1e6c490f020674c9a9b2351b56765a, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8824914037168641801
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +445,6 @@ GameObject:
   - component: {fileID: 5152620028052465193}
   - component: {fileID: 2475844127117403337}
   - component: {fileID: 9008219665067390427}
-  - component: {fileID: 5629624644076569571}
   m_Layer: 0
   m_Name: Kitchen_Probes_30
   m_TagString: Untagged
@@ -493,6 +462,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.046325684, y: 0.25883156, z: 0.046859417}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8018801769334353353}
   m_RootOrder: 3
@@ -516,9 +486,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -530,6 +503,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -542,17 +516,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5629624644076569571
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8824914037168641801}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4437241818860241592, guid: 6b1e6c490f020674c9a9b2351b56765a, type: 3}
+  m_AdditionalVertexStreams: {fileID: 0}
