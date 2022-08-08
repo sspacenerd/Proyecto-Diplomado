@@ -10,6 +10,7 @@ TagManager:
   - DoorR
   - DoorL
   - Door
+  - Safe
   layers:
   - Default
   - TransparentFX
