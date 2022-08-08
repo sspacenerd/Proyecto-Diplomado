@@ -43,10 +43,6 @@ public class PickUp : MonoBehaviour
                     isPicked = false;
                     pickedGameObejct = null;
                 }
-                if(hit.transform.tag == "Safe" && hit.transform.gameObject.GetComponent<Machine>().canTouch)
-                {
-                    StartCoroutine(hit.transform.GetComponent<Machine>().Rotation());
-                }
             }
         }
         if (Input.GetKeyDown(KeyCode.E)) //Si yo presiono la E
