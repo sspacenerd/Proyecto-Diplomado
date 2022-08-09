@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour
         }
         if (ES3.KeyExists("Volume"))
         {
-            volume.value = (float)ES3.Load("Volume", 1);
+            volume.value = (float)ES3.Load("Volume");
         }
         //audioMixer.SetFloat("volume", Mathf.Log10((float)ES3.Load("Volume", 1)) * 20);
     }
