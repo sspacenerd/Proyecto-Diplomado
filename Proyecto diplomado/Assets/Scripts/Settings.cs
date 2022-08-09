@@ -18,7 +18,11 @@ public class Settings : MonoBehaviour
     {
         currentMouseSensibility = PlayerController.mouseSensitivity;
         sensibility.value = currentMouseSensibility;
-        volume.value = (float)ES3.Load("Volume", 1);
+
+        if (ES3.KeyExists("Volume"))
+        {
+            volume.value = (float)ES3.Load("Volume");
+        }
 
     }
     public void SetVolume(float volume)
