@@ -21,8 +21,8 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         imageToFade.DOFade(0, 1);
-        sensibility.value = (float)ES3.Load("Sensibility");
-        volume.value = (float)ES3.Load("Volume");
+        sensibility.value = (float)ES3.Load("Sensibility", 1);
+        volume.value = (float)ES3.Load("Volume", 1);
         //audioMixer.SetFloat("volume", Mathf.Log10((float)ES3.Load("Volume", 1)) * 20);
     }
     public void StartGame()

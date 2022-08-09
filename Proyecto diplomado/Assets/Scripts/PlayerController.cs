@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        mouseSensitivity = (float)ES3.Load("Sensibility");
+        mouseSensitivity = (float)ES3.Load("Sensibility",1);
     }
 
     private void Start()
