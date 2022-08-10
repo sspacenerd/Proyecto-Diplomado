@@ -5,19 +5,18 @@ using DG.Tweening;
 
 public class Machine : MonoBehaviour
 {
-    [Range(0,6)]
+    [Range(0,5)]
     public int targetIndex;
     public int index;
     public bool canTouch = true;
-
-   public IEnumerator Rotation()
+    public IEnumerator Rotation()
     {
         canTouch = false;
-        gameObject.transform.DORotate(transform.eulerAngles + new Vector3(0, 0, 60), 1);
+        transform.Rotate(new Vector3(transform.rotation.x + 72, 0,0));
         index++;
         switch (index)
         {
-            case 6:
+            case 5:
                 {
                     index = 0;
                     break;
