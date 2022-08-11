@@ -22,7 +22,7 @@ public class Machine : MonoBehaviour
                     break;
                 }
         }
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.3f);
         canTouch = true;
         yield break;
     }
