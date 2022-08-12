@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+//---- Settings.cs
+//---- Usando referencias de:
+//---- docs.moodkie.com/easy-save-3/getting-started/
 public class Settings : MonoBehaviour
 {
     [SerializeField] private AudioMixer audioMixer;

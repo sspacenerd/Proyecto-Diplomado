@@ -1,5 +1,7 @@
 using UnityEngine;
-
+//---- Items.cs
+//---- Usando referencias de:
+//---- youtube.com/watch?v=AoD_F1fSFFg&t=738s
 [CreateAssetMenu(fileName = "New Item", menuName = "Create New Item")]
 public class Item : ScriptableObject
 {

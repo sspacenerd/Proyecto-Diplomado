@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+// PickUp.cs
+// Usando referencias de:
+// youtube.com/watch?v=pPcYr3tL3Sc
 public class PickUp : MonoBehaviour
 {
     [SerializeField] private GameObject dotScreen, handScreen, player;

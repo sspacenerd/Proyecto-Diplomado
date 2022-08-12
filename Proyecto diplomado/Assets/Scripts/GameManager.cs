@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using TMPro;
+
+//GameMaganer.cs
+//Usando referencias de:
+//assetstore.unity.com/packages/3d/props/interior/clock-4250#description
+//www.youtube.com/watch?v=oWEiYuVkVOw&t=14s
 public class GameManager : MonoBehaviour
 {
     public static GameManager gameManagerInstance;

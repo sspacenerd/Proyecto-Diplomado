@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
-
+//---- InventorySystem.cs
+//---- Usando referencias de:
+//---- youtube.com/watch?v=AoD_F1fSFFg&t=738s
 public class InventorySystem : MonoBehaviour
 {
     public static InventorySystem instance;

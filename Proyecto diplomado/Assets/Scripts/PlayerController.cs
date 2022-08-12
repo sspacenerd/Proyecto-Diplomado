@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// PlayerController.cs
+// Usando referencias de:
+//youtube.com/watch?v=PmIPqGqp8UY
+
 public class PlayerController : MonoBehaviour
 {
 
