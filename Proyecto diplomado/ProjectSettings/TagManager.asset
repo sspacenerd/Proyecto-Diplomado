@@ -22,8 +22,8 @@ TagManager:
   - InteractionLayer
   - PickUp
   - pickedUp
-  - 
-  - 
+  - WhatIsGround
+  - WhatIsPlayer
   - 
   - 
   - 
