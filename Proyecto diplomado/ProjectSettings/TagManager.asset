@@ -12,6 +12,7 @@ TagManager:
   - Door
   - Safe
   - Grillo
+  - Cuadro
   layers:
   - Default
   - TransparentFX

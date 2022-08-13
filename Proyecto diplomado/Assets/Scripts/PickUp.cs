@@ -18,7 +18,8 @@ public class PickUp : MonoBehaviour
 
     public float rayDistance = 3f;
 
-    public static GameObject pickedGameObejct; 
+    public static GameObject pickedGameObejct;
+    public GameObject[] aaa;
 
 
     void Start()
@@ -57,7 +58,7 @@ public class PickUp : MonoBehaviour
             {
                 if (!isPicked && hit.transform.tag == "CanPickUp") //Si yo no tengo nada agarrado y el tag de HIT es CanPickUp
                 {
-                    hit.transform.gameObject.GetComponent<ItemPickUp>().PickUp(); //Es para agarrar algo
+                    hit.transform.gameObject.GetComponent<ItemPickUp>().PickUp(); //Es para agarrar algo y guardarlo en el inventario
                 }
                 if (hit.transform.GetComponent<InteractionManager>())
                 {
@@ -82,6 +83,21 @@ public class PickUp : MonoBehaviour
                         {
                             Destroy(hit.transform.gameObject);
                             StartCoroutine(GameManager.gameManagerInstance.Grillo());
+                            break;
+                        }
+                    case "Cuadro":
+                        {
+                            for (int i = 0; i < inventorySystemReference.GetComponent<InventorySystem>().items.Count; i++)
+                            {
+                                if ((inventorySystemReference.items[i].itemType == Item.ItemType.photo))
+                                {
+                                    inventorySystemReference.Remove(inventorySystemReference.items[i]);
+                                    for (int y = 0; y < aaa.Length; y++)
+                                    {
+                                        aaa[y].SetActive(true);
+                                    }
+                                }
+                            }
                             break;
                         }
                 }
