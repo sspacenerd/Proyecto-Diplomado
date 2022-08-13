@@ -91,10 +91,13 @@ public class PickUp : MonoBehaviour
                             {
                                 if ((inventorySystemReference.items[i].itemType == Item.ItemType.photo))
                                 {
-                                    inventorySystemReference.Remove(inventorySystemReference.items[i]);
                                     for (int y = 0; y < aaa.Length; y++)
                                     {
-                                        aaa[y].SetActive(true);
+                                        if(inventorySystemReference.items[i].itemName == aaa[y].transform.name)
+                                        {
+                                            aaa[y].SetActive(true);
+                                            inventorySystemReference.Remove(inventorySystemReference.items[i]);
+                                        }
                                     }
                                 }
                             }

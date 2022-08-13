@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject menu, settings;
     [SerializeField] private Image imageToFade;
-    [SerializeField] private Volume volume;
 
     public const int hoursInDay = 24, minutesInHour = 60;
     const float hoursToDegrees = 360 / 12, minutesToDegrees = 360 / 60;
@@ -29,11 +28,14 @@ public class GameManager : MonoBehaviour
     public Transform minuteHand, hourHand;
     public TextMeshProUGUI grillo;
     public int grillos;
-
+    public Volume volume;
+    
     private float totalTime = 0, currentTime = 0, goToSpeed;
     private bool manipulatinTime, gg;
     private Camera myCam;
     private DepthOfField depth;
+    private ChromaticAberration myChrom;
+    private LiftGammaGain myLGG;
 
 
 
@@ -47,6 +49,8 @@ public class GameManager : MonoBehaviour
     {
         Fade(imageToFade, 0, 1);
         volume.profile.TryGet(out depth);
+        volume.profile.TryGet(out myChrom);
+        volume.profile.TryGet(out myLGG);
         myCam = Camera.main;
     }
     void Update()
@@ -160,6 +164,20 @@ public class GameManager : MonoBehaviour
         grillo.DOFade(1, 3);
         yield return new WaitForSeconds(3);
         grillo.DOFade(0, 3);
+        yield break;
+    }
+    public void MyEffect()
+    {
+        StartCoroutine(MyEffectCoroutine());
+    }
+
+    public IEnumerator MyEffectCoroutine()
+    {
+        myChrom.active = true;
+        myLGG.active = true;
+        yield return new WaitForSeconds(4f);
+        myChrom.active = false;
+        myLGG.active = false;
         yield break;
     }
 }
