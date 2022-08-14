@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Bottle
   m_EditorClassIdentifier: 
   itemName: bottle
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: aeeec4c4212fab041a8e1c5e9c7b3242, type: 3}
   itemType: 4

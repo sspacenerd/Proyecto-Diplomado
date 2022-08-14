@@ -12,7 +12,7 @@ public class PickUp : MonoBehaviour
 
     private Camera myCam;
     private bool isPicked;
-    private RaycastHit hit;
+    public RaycastHit hit;
     private InventorySystem inventorySystemReference;
     private LayerMask interactionLayer = 1 << 6, pickUpLayer = 1 << 7, pickedUpLayer = 1 << 8;
 
@@ -31,8 +31,8 @@ public class PickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, interactionLayer) && GameManager.gameIsPaused == false)
+        Debug.Log(pickedGameObejct);
+        if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, interactionLayer) && GameManager.gameIsPaused == false && !isPicked)
         {
             if (hit.transform.tag == "CanPickUp" || hit.transform.tag == "Grillo")
             {
@@ -118,56 +118,9 @@ public class PickUp : MonoBehaviour
                 }
             }
         }
-        /*
-        if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, raycastLayerMask) && GameManager.gameIsPaused == false)
-        {
-        ]
-        {
-            if (hit.transform.tag == "CanPickUp")
-            {
-                dotScreen.SetActive(false);
-                handScreen.SetActive(true);
-            }
-            else
-            {
-                dotScreen.SetActive(true);
-                handScreen.SetActive(false);
-            }
-            if (!isGrabbed)
-            {
-                if (Input.GetKeyDown(KeyCode.E) && hit.transform.tag == "CanPickUp")
-                {
-                    hit.transform.gameObject.GetComponent<ItemPickUp>().PickUp();
-                }
-
-                if (Input.GetMouseButtonDown(0) && hit.transform.tag == "CanPickUp")
-                {
-                    PickUpObject(hit.transform.gameObject);
-                    isGrabbed = true;
-                }
-                if (Input.GetKeyDown(KeyCode.E) && hit.transform.GetComponent<InteractionManager>())
-                {
-
-                     hit.transform.gameObject.GetComponent<InteractionManager>().Interaction();
-
-                }
-            }
-            else if (inventorySystemReference.GetComponent<InventorySystem>().isOpen == false && Input.GetMouseButtonDown(0) && hit.transform.gameObject == grabbedObject)
-            {
-                LeaveObject(hit.transform.gameObject);
-                isGrabbed = false;
-                grabbedObject = null;
-            }
-        }
-        else
-        {
-            dotScreen.SetActive(true);
-            handScreen.SetActive(false);
-        }
-        */
         if (isPicked && Input.GetKey(KeyCode.R) && GameManager.gameIsPaused == false)
         {
-            RotateObject(hit.transform.gameObject);
+            RotateObject(pickedGameObejct);
         }
         if(isPicked && Input.GetKeyUp(KeyCode.R) && GameManager.gameIsPaused == false)
         {
@@ -178,7 +131,7 @@ public class PickUp : MonoBehaviour
     void PickUpObject(GameObject objectToPick)
     {
         pickedGameObejct = objectToPick;
-        pickedGameObejct.layer = LayerMask.NameToLayer("pickedUp");
+        pickedGameObejct.layer = LayerMask.NameToLayer("InteractionLayer");
         objectToPick.GetComponent<Rigidbody>().isKinematic = true;
         objectToPick.transform.position = holdGameObject.transform.position;
         objectToPick.transform.LookAt(player.transform.position);

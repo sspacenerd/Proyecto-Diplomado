@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public static GameManager gameManagerInstance;
     public static bool gameIsPaused;
 
-    [SerializeField] private GameObject menu, settings;
+    [SerializeField] private GameObject menu, settings, controls;
     [SerializeField] private Image imageToFade;
     [SerializeField] private CanvasGroup gameFinished;
 
@@ -45,6 +45,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         gameManagerInstance = this;
+        Fade(imageToFade, 0, 1);
+        volume.profile.TryGet(out depth);
+        volume.profile.TryGet(out myChrom);
+        volume.profile.TryGet(out myLGG);
+        myCam = Camera.main;
     }
 
     private async void Start()
@@ -52,14 +57,6 @@ public class GameManager : MonoBehaviour
         
         await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
         hola = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.Hola, hola);
-        
-
-
-        Fade(imageToFade, 0, 1);
-        volume.profile.TryGet(out depth);
-        volume.profile.TryGet(out myChrom);
-        volume.profile.TryGet(out myLGG);
-        myCam = Camera.main;
         /*
         await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
         livesCounter = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.CurrentLives, livesCounter);
@@ -138,6 +135,7 @@ public class GameManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             settings.SetActive(false);
+            controls.SetActive(false);
             menu.SetActive(false);
             myCam.fieldOfView = 60;
         }
