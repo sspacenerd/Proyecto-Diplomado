@@ -15,7 +15,7 @@ D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50490
+50059
 Successfully changed project path to: D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
 D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/Users/EQUIPO/Documents/Unity/Proyecto-Diplomado/Proyecto diplomado
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 192.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 212.12 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
 [Subsystems] Discovering subsystems at path D:/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -63,89 +63,89 @@ Initialize mono
 Mono path[0] = 'D:/2021.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56036
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56232
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.022663 seconds.
+Registered in 0.026000 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 188.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 193.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.181 seconds
+- Completed reload, in  1.253 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1181ms)
-		BeginReloadAssembly (222ms)
+	ReloadAssembly (1253ms)
+		BeginReloadAssembly (209ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (754ms)
-			LoadAssemblies (211ms)
+		EndReloadAssembly (809ms)
+			LoadAssemblies (195ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (145ms)
+			SetupTypeCache (159ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (483ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (518ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (189ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (198ms)
-				ProcessInitializeOnLoadMethodAttributes (81ms)
+				RefreshPlugins (193ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.044468 seconds.
+Registered in 0.046582 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Users\EQUIPO\Documents\Unity\Proyecto-Diplomado\Proyecto diplomado\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 282.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 273.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.736 seconds
+- Completed reload, in  2.997 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3737ms)
-		BeginReloadAssembly (392ms)
+	ReloadAssembly (2999ms)
+		BeginReloadAssembly (263ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (2990ms)
-			LoadAssemblies (401ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (2495ms)
+			LoadAssemblies (297ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (693ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (244ms)
-			SetupLoadedEditorAssemblies (1677ms)
+			SetupTypeCache (482ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (161ms)
+			SetupLoadedEditorAssemblies (1496ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (283ms)
-				BeforeProcessingInitializeOnLoad (431ms)
-				ProcessInitializeOnLoadAttributes (786ms)
-				ProcessInitializeOnLoadMethodAttributes (129ms)
+				RefreshPlugins (274ms)
+				BeforeProcessingInitializeOnLoad (321ms)
+				ProcessInitializeOnLoadAttributes (718ms)
+				ProcessInitializeOnLoadMethodAttributes (134ms)
 				AfterProcessingInitializeOnLoad (35ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6142 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (1.4 MB). Loaded Objects now: 6620.
-Memory consumption went from 254.8 MB to 253.3 MB.
-Total: 12.751600 ms (FindLiveObjects: 0.953000 ms CreateObjectMapping: 0.927200 ms MarkObjects: 10.152900 ms  DeleteObjects: 0.716200 ms)
+Unloading 6150 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (1.4 MB). Loaded Objects now: 6628.
+Memory consumption went from 255.0 MB to 253.5 MB.
+Total: 5.111000 ms (FindLiveObjects: 0.556500 ms CreateObjectMapping: 0.450300 ms MarkObjects: 3.691200 ms  DeleteObjects: 0.411800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,11 +160,301 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 28878.898175 seconds.
-  path: Assets/Archteria3D/ManorInteriorMegaPack/Office_Pack/Models/Eyeglasses.fbx
-  artifactKey: Guid(4cd4968a12c161e47a3088ebe941a2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archteria3D/ManorInteriorMegaPack/Office_Pack/Models/Eyeglasses.fbx using Guid(4cd4968a12c161e47a3088ebe941a2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac937efa483ab1c4ca11d602d8022bbf') in 1.032003 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 35733.918653 seconds.
+  path: Assets/Old window door/DefaultMaterial_normal.png
+  artifactKey: Guid(870596b6bf8458b4ea79561a30e09a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Old window door/DefaultMaterial_normal.png using Guid(870596b6bf8458b4ea79561a30e09a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73741288b4eafb1b09a88a911e22360d') in 0.278072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Old window door/Rug_Bottom.png
+  artifactKey: Guid(1586813ebb15fb64cad2be0b37ca5470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Old window door/Rug_Bottom.png using Guid(1586813ebb15fb64cad2be0b37ca5470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee960a7969decbf21375f7530f5a21e') in 0.035673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Old window door/DefaultMaterial_metallic.jpg
+  artifactKey: Guid(209c6eda40cf45f478610c8aa44ef561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Old window door/DefaultMaterial_metallic.jpg using Guid(209c6eda40cf45f478610c8aa44ef561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920e44c4d8108b4944d0646e7e611d15') in 0.052033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Old window door/Ventana.mat
+  artifactKey: Guid(4a05a25a5cf584f40a32192dd5314ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Old window door/Ventana.mat using Guid(4a05a25a5cf584f40a32192dd5314ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d8acc596fd32c6f3f86de3c69454f93') in 0.507181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Old window door/Height.jpg
+  artifactKey: Guid(754f34263b16e16488631dc64c7c10ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Old window door/Height.jpg using Guid(754f34263b16e16488631dc64c7c10ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4fa8e63548e501ea9262ff2736b1fb') in 0.027137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Old window door/DefaultMaterial_roughness.jpg
+  artifactKey: Guid(5ebc1d13b6593764e99a6550c895833a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Old window door/DefaultMaterial_roughness.jpg using Guid(5ebc1d13b6593764e99a6550c895833a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdbee3fe6fc4fd5faf20a4a31e8d7e37') in 0.128551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 181.641862 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Textures/Bath_Suit_Sink_Mirror_AlbedoTransparency.tga
+  artifactKey: Guid(4c46348900f74c346a6335fe2af243d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bathroom_Pack/Textures/Bath_Suit_Sink_Mirror_AlbedoTransparency.tga using Guid(4c46348900f74c346a6335fe2af243d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede31219806a7a658cf4ad8fc5f94fa7') in 0.049810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Billing_Room_Bar_3_AlbedoTransparency.tga
+  artifactKey: Guid(a5f55ad47cc778b47a4abae17b5fd914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Billing_Room_Bar_3_AlbedoTransparency.tga using Guid(a5f55ad47cc778b47a4abae17b5fd914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37109bed5e1ecc7ccc194787ca8c1661') in 0.029828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Curtain_Export_H1_Curtain2_AlbedoTransparency.tga
+  artifactKey: Guid(704047e7c61637e4caab0f829f42beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Curtain_Export_H1_Curtain2_AlbedoTransparency.tga using Guid(704047e7c61637e4caab0f829f42beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21e929675f007bacaa6b8b4c71bceb9') in 0.034861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Child_Room_BD4_Cabinet_Child_AlbedoTransparency.tga
+  artifactKey: Guid(51a4348e518857946818f838e6a425cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Child_Room_BD4_Cabinet_Child_AlbedoTransparency.tga using Guid(51a4348e518857946818f838e6a425cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b5b00c6b2a208392f45b51d8758f93') in 0.027653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Child_Room_BD4_Bed_Child_AlbedoTransparency.tga
+  artifactKey: Guid(ae5f5099139d96345a22d0720aba5c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Child_Room_BD4_Bed_Child_AlbedoTransparency.tga using Guid(ae5f5099139d96345a22d0720aba5c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101a2978d1ac0fc96c3ca879fe9445bb') in 0.041082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Fireplace_Fireplace_3_AlbedoTransparency.tga
+  artifactKey: Guid(abe636ce2f8a5e14d9b0f8de2c6b1286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Fireplace_Fireplace_3_AlbedoTransparency.tga using Guid(abe636ce2f8a5e14d9b0f8de2c6b1286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '512c529e7419e3e8efb03beac231cca4') in 0.041555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Dress_Room_Suite_Dress_Room_2_AlbedoTransparency.tga
+  artifactKey: Guid(e70a1dce1cfa8e646badb9ee468a25d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Dress_Room_Suite_Dress_Room_2_AlbedoTransparency.tga using Guid(e70a1dce1cfa8e646badb9ee468a25d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa0d20552ea1736d4951c0dc8b19d79') in 0.032464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Cabinet_Cabinet_3_Mat_AlbedoTransparency.tga
+  artifactKey: Guid(f990e72ba94c2dd44bf5f1cb22d0fc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Cabinet_Cabinet_3_Mat_AlbedoTransparency.tga using Guid(f990e72ba94c2dd44bf5f1cb22d0fc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b2d984c631892901d74fd2e66ed4cf') in 0.127886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Billing_Room_Bar_4_AlbedoTransparency.tga
+  artifactKey: Guid(24c2decd1e6c45341bfa38ff4e0c907b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Billing_Room_Bar_4_AlbedoTransparency.tga using Guid(24c2decd1e6c45341bfa38ff4e0c907b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '131a5956109087f7e84cc5569da7759c') in 0.039912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Curtain_Export_H1_Curtain1_AlbedoTransparency.tga
+  artifactKey: Guid(b397f97c7f0c5c64abb848eb2f1f1a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Curtain_Export_H1_Curtain1_AlbedoTransparency.tga using Guid(b397f97c7f0c5c64abb848eb2f1f1a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bea36c9d0671e1ff21bf650035b7991') in 0.041774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Cabinet_Cabinet_2_1_Mat_AlbedoTransparency.tga
+  artifactKey: Guid(c9a47accbe1800b4dafeb1cf2c572dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Cabinet_Cabinet_2_1_Mat_AlbedoTransparency.tga using Guid(c9a47accbe1800b4dafeb1cf2c572dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b816d61d0b675f584175e260524cea') in 0.082366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Office_Pack/Textures/Fireplace_Fireplace_1_AlbedoTransparency.tga
+  artifactKey: Guid(ffe0ca67cb5d1494bab531540b39b1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Office_Pack/Textures/Fireplace_Fireplace_1_AlbedoTransparency.tga using Guid(ffe0ca67cb5d1494bab531540b39b1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd544b844dfb5039133fddec27cd648d') in 0.082111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Fireplace_Fireplace_2_AlbedoTransparency.tga
+  artifactKey: Guid(5f2d7df197e79db4a899e5573aa3b8fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Fireplace_Fireplace_2_AlbedoTransparency.tga using Guid(5f2d7df197e79db4a899e5573aa3b8fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c125efad1c6cf09ab480379a7d4823') in 0.106187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Fireplace_Fireplace_4_1_AlbedoTransparency.tga
+  artifactKey: Guid(45c7cdcc0c5d8b54db729cab098a7bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Fireplace_Fireplace_4_1_AlbedoTransparency.tga using Guid(45c7cdcc0c5d8b54db729cab098a7bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08de479b0f2f81f5de17939a4b22dc6d') in 0.091353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Cabinet_Cabinet_Glass_Mat_AlbedoTransparency.tga
+  artifactKey: Guid(ed55d11e1ebfdf44ab83f146c89364d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Cabinet_Cabinet_Glass_Mat_AlbedoTransparency.tga using Guid(ed55d11e1ebfdf44ab83f146c89364d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba542ef119a86fb53e9b9da1754c5a06') in 0.037834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Resources/DOTweenSettings.asset
+  artifactKey: Guid(9b0a45066b7772a4f80fb4bf96282ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/DOTweenSettings.asset using Guid(9b0a45066b7772a4f80fb4bf96282ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9f353957f04395fa2a9205a9a5df69') in 0.061455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Cosmetics_Cosmetics_AlbedoTransparency.tga
+  artifactKey: Guid(1075a26090b6ce444ba22933c87ed749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Bedroom_Pack/Textures/Cosmetics_Cosmetics_AlbedoTransparency.tga using Guid(1075a26090b6ce444ba22933c87ed749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f202027a2999b87b312589927e5068') in 0.039933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Cabinet_Cabinet_1_Mat_AlbedoTransparency.tga
+  artifactKey: Guid(4c67855d9dea8bb4ead0600fc247e4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Textures/Cabinet_Cabinet_1_Mat_AlbedoTransparency.tga using Guid(4c67855d9dea8bb4ead0600fc247e4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732314c5ab502233a98fa4f6abd65e85') in 0.038628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.026628 seconds.
+  path: Assets/Plugins/Demigiant/DOTween
+  artifactKey: Guid(a095d88e925578a419af56cd5bac1a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween using Guid(a095d88e925578a419af56cd5bac1a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64dcfb4a2d05398596eb033c8aee6ed') in 0.011940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.773489 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/DOTween.dll
+  artifactKey: Guid(a811bde74b26b53498b4f6d872b09b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/DOTween.dll using Guid(a811bde74b26b53498b4f6d872b09b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '386d0e67ebf8f156edb50e1d559e0636') in 0.011720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.568754 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Modules
+  artifactKey: Guid(143604b8bad857d47a6f7cc7a533e2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Modules using Guid(143604b8bad857d47a6f7cc7a533e2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813834cbe20eb556b43a4d2a2f036777') in 0.010666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.983990 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Editor
+  artifactKey: Guid(b27f58ae5d5c33a4bb2d1f4f34bd036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Editor using Guid(b27f58ae5d5c33a4bb2d1f4f34bd036d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490396704ecf38966db2bef1ceb8983e') in 0.009737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.926426 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Editor/Imgs
+  artifactKey: Guid(0034ebae0c2a9344e897db1160d71b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Editor/Imgs using Guid(0034ebae0c2a9344e897db1160d71b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb66dee1f1b6b75eb72bb02625885f4') in 0.011339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031162 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer.png
+  artifactKey: Guid(7051dba417b3d53409f2918f1ea4938d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer.png using Guid(7051dba417b3d53409f2918f1ea4938d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f653b46aa77f610036fc218d8c931f38') in 0.113379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.695686 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs
+  artifactKey: Guid(b766d08851589514b97afb23c6f30a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs using Guid(b766d08851589514b97afb23c6f30a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3587d0fa61227a25cf373df8c67aec') in 0.015446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 165.574232 seconds.
+  path: Assets/Clock/Prefabs/clock.prefab
+  artifactKey: Guid(595cf544943e29a4d9a7b813e4218a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Clock/Prefabs/clock.prefab using Guid(595cf544943e29a4d9a7b813e4218a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4219d7d1b7e12ef9c129e13bf800f0a') in 0.220245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Clock/3dobjects_FBX/Materials/clock_main.mat
+  artifactKey: Guid(099241b3f9881c54d854dcd4fcbda0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Clock/3dobjects_FBX/Materials/clock_main.mat using Guid(099241b3f9881c54d854dcd4fcbda0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3bfe3c5a21221f87ecfa094aeb5d62d') in 0.040134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Grandfather_Clock.prefab
+  artifactKey: Guid(300614f8c711f5f40b3c1f6ddfe03c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Archteria3D/ManorInteriorMegaPack/Living_Room_Pack/Prefabs/Grandfather_Clock.prefab using Guid(300614f8c711f5f40b3c1f6ddfe03c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c145449b0408da9c7c4bfb70cf3e5ee7') in 0.209900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.001721 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(23fd3ef6adb66114c8e1d2a19740931e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(23fd3ef6adb66114c8e1d2a19740931e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '426ce3e9684b73267b7cca6a25853c86') in 0.109139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.696468 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5648c5ef36b7beab651a001a8d08867') in 0.013062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 80.204093 seconds.
+  path: Assets/Art/Textures/round-pattern-wallpaper1_albedo.png
+  artifactKey: Guid(1def7031fd246b94db0b92eb6fab1d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/round-pattern-wallpaper1_albedo.png using Guid(1def7031fd246b94db0b92eb6fab1d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880e363e61870f050bc01e548e100992') in 0.051027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Art/Textures/round-pattern-wallpaper1_normal-ogl.png
+  artifactKey: Guid(49d2a10be406b11439765a161b25b474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/round-pattern-wallpaper1_normal-ogl.png using Guid(49d2a10be406b11439765a161b25b474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a09cfbb94183d31e1f453b13e894b5') in 0.034326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.498200 seconds.
+  path: Assets/Art/Materials/Grillo.mat
+  artifactKey: Guid(cbea33af6c6cc8b428ab845038239582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Grillo.mat using Guid(cbea33af6c6cc8b428ab845038239582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2369117b0ce8a582dac3331a0eb906') in 0.161141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Art/Materials/Piso_6.mat
+  artifactKey: Guid(2fc51fc81c5645a469c4b57df32d20a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Piso_6.mat using Guid(2fc51fc81c5645a469c4b57df32d20a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c64e869ab4cf8392058f6576c54e4f47') in 0.045453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Art/Materials/Madera_5.mat
+  artifactKey: Guid(60352ad2a1b46ab44be4f75bcb311621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Madera_5.mat using Guid(60352ad2a1b46ab44be4f75bcb311621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd259921dc7d258751f2b88d82b026391') in 0.049060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Materials/Piso_8.mat
+  artifactKey: Guid(7ae7b04680d259e42baf9c26d952c49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Piso_8.mat using Guid(7ae7b04680d259e42baf9c26d952c49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dcbe7cf4610cd470d6b7543c250f2f9') in 0.056471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Art/Materials/Pared_7.mat
+  artifactKey: Guid(9e89f68c6ef7db744a83d1fe3db68ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Pared_7.mat using Guid(9e89f68c6ef7db744a83d1fe3db68ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ebd54b291db5a1f5c3d3e2e079d58f') in 0.046415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Materials/Piso_2.mat
+  artifactKey: Guid(e223d470244b7f2449540b6071fbdf31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Piso_2.mat using Guid(e223d470244b7f2449540b6071fbdf31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674a6db3f3d5f5a932e8809c8db7125c') in 0.045877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Art/Materials/Piso_7.mat
+  artifactKey: Guid(0389072aaa9e9ba42b1e9d1be8df2062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Piso_7.mat using Guid(0389072aaa9e9ba42b1e9d1be8df2062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38676a5dea8af009447cda19abdcf052') in 0.034214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Materials/Pared_6.mat
+  artifactKey: Guid(484fcb7dc67b45a4fb76bacd5c8e07a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Pared_6.mat using Guid(484fcb7dc67b45a4fb76bacd5c8e07a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86082f7227b3d31f146efce0dcc6e3f5') in 0.042658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.687146 seconds.
+  path: Assets/Audio/Abrir_Gabeta.wav
+  artifactKey: Guid(86ca8b7db3e21054eb3903e35b9338fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Abrir_Gabeta.wav using Guid(86ca8b7db3e21054eb3903e35b9338fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f7208994d6cb838aa116d598cb5a56') in 0.210718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Audio/Cerrar_Gabeta.wav
+  artifactKey: Guid(7e5753f12111de74fb1e92a171ac35b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Cerrar_Gabeta.wav using Guid(7e5753f12111de74fb1e92a171ac35b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad57435dad101ae4c0b3b0b3aa92e9d0') in 0.070685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 157.024422 seconds.
+  path: Assets/Settings/SampleSceneProfile.asset
+  artifactKey: Guid(a6560a915ef98420e9faacc1c7438823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/SampleSceneProfile.asset using Guid(a6560a915ef98420e9faacc1c7438823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa4e9c59184b80680cde30550462999') in 0.009774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.839586 seconds.
+  path: Assets/Readme.txt
+  artifactKey: Guid(0a462606475636649af1eee9a8fbf3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Readme.txt using Guid(0a462606475636649af1eee9a8fbf3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20cf83ab4cd54535def5504f61097fc') in 0.016649 seconds 
