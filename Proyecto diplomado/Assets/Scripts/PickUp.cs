@@ -31,6 +31,25 @@ public class PickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, interactionLayer) && GameManager.gameIsPaused == false)
+        {
+            if (hit.transform.tag == "CanPickUp" || hit.transform.tag == "Grillo")
+            {
+                dotScreen.SetActive(false);
+                handScreen.SetActive(true);
+            }
+            else
+            {
+                dotScreen.SetActive(true);
+                handScreen.SetActive(false);
+            }
+        }
+        else
+        {
+            dotScreen.SetActive(true);
+            handScreen.SetActive(false);
+        }
         if (Input.GetMouseButtonDown(0))
         {
             if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false)
@@ -54,7 +73,7 @@ public class PickUp : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E)) //Si yo presiono la E
         {
-            if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false) //Y si yo lanzo un rayo desde mi posicion hasta el fordward de la camara
+            if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, interactionLayer) && GameManager.gameIsPaused == false) //Y si yo lanzo un rayo desde mi posicion hasta el fordward de la camara
             {
                 if (!isPicked && hit.transform.tag == "CanPickUp") //Si yo no tengo nada agarrado y el tag de HIT es CanPickUp
                 {
@@ -89,16 +108,9 @@ public class PickUp : MonoBehaviour
                         {
                             for (int i = 0; i < inventorySystemReference.GetComponent<InventorySystem>().items.Count; i++)
                             {
-                                if ((inventorySystemReference.items[i].itemType == Item.ItemType.photo))
+                                if (inventorySystemReference.items[i].itemType == Item.ItemType.photo)
                                 {
-                                    for (int y = 0; y < aaa.Length; y++)
-                                    {
-                                        if(inventorySystemReference.items[i].itemName == aaa[y].transform.name)
-                                        {
-                                            aaa[y].SetActive(true);
-                                            inventorySystemReference.Remove(inventorySystemReference.items[i]);
-                                        }
-                                    }
+                                    aaa[i].SetActive(true);
                                 }
                             }
                             break;
@@ -108,6 +120,8 @@ public class PickUp : MonoBehaviour
         }
         /*
         if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, raycastLayerMask) && GameManager.gameIsPaused == false)
+        {
+        ]
         {
             if (hit.transform.tag == "CanPickUp")
             {
@@ -186,7 +200,14 @@ public class PickUp : MonoBehaviour
     }
     void LeaveObject(GameObject objectToLeave)
     {
-        pickedGameObejct.layer = LayerMask.NameToLayer("PickUp");
+        if (hit.transform.gameObject.GetComponent<ItemPickUp>())
+        {
+            pickedGameObejct.layer = LayerMask.NameToLayer("InteractionLayer");
+        }
+        else
+        {
+            pickedGameObejct.layer = LayerMask.NameToLayer("PickUp");
+        }
         objectToLeave.GetComponent<Rigidbody>().isKinematic = false;
         Physics.IgnoreCollision(objectToLeave.GetComponent<Collider>(), player.transform.GetComponent<Collider>(), false);
         PlayerController.mouseSensitivity = Settings.currentMouseSensibility;

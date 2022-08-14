@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform myCam = null;
     public static float mouseSensitivity;
     public float walkSpeed;
+    public AudioSource footSteps;
     [SerializeField] private float gravity = -13f;
     [SerializeField][Range(0.0f, 0.5f)] private float moveSmoothTime = 0.3f; 
     [SerializeField][Range(0.0f, 0.5f)] private float mouseSmoothTime = 0.3f;
@@ -55,6 +56,14 @@ public class PlayerController : MonoBehaviour
     }
     void PlayerMovement()
     {
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D))
+        {
+            footSteps.enabled = true;
+        }
+        else
+        {
+            footSteps.enabled = false;
+        }
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         targetDir.Normalize();
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
