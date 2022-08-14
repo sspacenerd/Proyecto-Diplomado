@@ -49,9 +49,10 @@ public class GameManager : MonoBehaviour
 
     private async void Start()
     {
+        
         await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
         hola = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.Hola, hola);
-
+        
 
 
         Fade(imageToFade, 0, 1);
@@ -180,7 +181,7 @@ public class GameManager : MonoBehaviour
 
     public void QuitGame()
     {
-        UnityGamingServices.AnalyticsManager.Flujo("MainMenuScreen");
+        UnityGamingServices.AnalyticsManager.FlujoEscenas("MainMenuScreen");
         StartCoroutine(Quit());
     }
     IEnumerator Quit()
