@@ -8,7 +8,6 @@ using DG.Tweening;
 public class InventoryItemController : MonoBehaviour
 {
     Item item;
-
     public void ItemInteract()
     {
         InventorySystem.instance.Remove(item);

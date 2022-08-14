@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityGamingServices;
 
 // PlayerController.cs
 // Usando referencias de:
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
     CharacterController controller;
 
+
     private void Awake()
     {
         if (ES3.KeyExists("Sensibility"))
@@ -37,7 +39,7 @@ public class PlayerController : MonoBehaviour
             mouseSensitivity = (float)ES3.Load("Sensibility");
         }
     }
-
+    
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -47,6 +49,7 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = false;
         }
     }
+    
     private void Update()
     {
         PlayerMovement();

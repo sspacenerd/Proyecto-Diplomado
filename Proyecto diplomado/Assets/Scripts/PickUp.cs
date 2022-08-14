@@ -50,9 +50,9 @@ public class PickUp : MonoBehaviour
             dotScreen.SetActive(true);
             handScreen.SetActive(false);
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)) //si yo presiono mi tecla izquierda del mouse
         {
-            if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false)
+            if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance) && GameManager.gameIsPaused == false)//lanzo un rayo 
             {
                 if (!isPicked && hit.transform.tag == "CanPickUp")
                 {

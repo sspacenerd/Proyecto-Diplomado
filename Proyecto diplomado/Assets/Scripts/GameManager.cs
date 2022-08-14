@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using TMPro;
+using UnityGamingServices;
 
 //GameMaganer.cs
 //Usando referencias de:
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
     private ChromaticAberration myChrom;
     private LiftGammaGain myLGG;
 
-
+    public int hola;
 
 
 
@@ -45,6 +46,40 @@ public class GameManager : MonoBehaviour
     {
         gameManagerInstance = this;
     }
+
+    private async void Start()
+    {
+        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
+        hola = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.Hola, hola);
+
+
+
+        Fade(imageToFade, 0, 1);
+        volume.profile.TryGet(out depth);
+        volume.profile.TryGet(out myChrom);
+        volume.profile.TryGet(out myLGG);
+        myCam = Camera.main;
+        /*
+        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
+        livesCounter = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.CurrentLives, livesCounter);
+
+        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
+        maxAmmo = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.MaxAmmo, maxAmmo);
+
+        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
+        ammoCounter = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.CurrentAmmo, ammoCounter);
+
+        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
+        isShopActive = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.IsShopActive, isShopActive);
+
+        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
+        isLivesShopActive = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.IsLivesShopActive, isLivesShopActive);
+
+        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
+        isAmmoShopActive = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.IsAmmoShopActive, isAmmoShopActive);
+        */
+    }
+    /*
     private void Start()
     {
         Fade(imageToFade, 0, 1);
@@ -53,6 +88,7 @@ public class GameManager : MonoBehaviour
         volume.profile.TryGet(out myLGG);
         myCam = Camera.main;
     }
+    */
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -144,6 +180,7 @@ public class GameManager : MonoBehaviour
 
     public void QuitGame()
     {
+        UnityGamingServices.AnalyticsManager.Flujo("MainMenuScreen");
         StartCoroutine(Quit());
     }
     IEnumerator Quit()
