@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject menu, settings;
     [SerializeField] private Image imageToFade;
+    [SerializeField] private CanvasGroup gameFinished;
 
     public const int hoursInDay = 24, minutesInHour = 60;
     const float hoursToDegrees = 360 / 12, minutesToDegrees = 360 / 60;
@@ -37,7 +38,6 @@ public class GameManager : MonoBehaviour
     private DepthOfField depth;
     private ChromaticAberration myChrom;
     private LiftGammaGain myLGG;
-
     public int hola;
 
 
@@ -217,6 +217,24 @@ public class GameManager : MonoBehaviour
         myChrom.active = false;
         myLGG.active = false;
         yield break;
+    }
+    IEnumerator GameFinished()
+    {
+        depth.active = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        gameFinished.DOFade(1, 1);
+        yield return new WaitForSeconds(5f);
+        QuitGame();
+        yield break;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Player")
+        {
+            Debug.Log("a");
+            StartCoroutine(GameFinished());
+        }
     }
 }
 
