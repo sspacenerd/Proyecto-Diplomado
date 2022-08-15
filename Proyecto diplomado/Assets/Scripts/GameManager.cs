@@ -38,9 +38,11 @@ public class GameManager : MonoBehaviour
     public Volume volume;
     public PlayerController player;
     public GameObject enemy;
+    public float currentTime = 0;
+    public AudioSource fondo;
 
-    private float totalTime = 0, currentTime = 0;
-    private bool manipulatinTime, gg;
+    private float totalTime = 0;
+    private bool manipulatinTime, gg, isActive = true;
     private Camera myCam;
     private DepthOfField depth;
     private ChromaticAberration myChrom;
@@ -80,6 +82,12 @@ public class GameManager : MonoBehaviour
     */
     void Update()
     {
+        if(currentTime >= dayDuration && isActive)
+        {
+            enemy.SetActive(true);
+            fondo.Play();
+            isActive = false;
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
