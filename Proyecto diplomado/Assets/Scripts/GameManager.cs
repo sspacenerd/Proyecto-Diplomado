@@ -87,10 +87,11 @@ public class GameManager : MonoBehaviour
 
         if (!manipulatinTime)
         {
+
             totalTime += Time.deltaTime;
             currentTime = totalTime % dayDuration * speed;
-            hourHand.rotation = Quaternion.Euler(0, 0, -GetHour() * hoursToDegrees);
-            minuteHand.rotation = Quaternion.Euler(0, 0, -GetMinutes() * minutesToDegrees);
+            hourHand.transform.rotation = Quaternion.Euler(0, 0, GetHour() * hoursToDegrees);
+            minuteHand.transform.rotation = Quaternion.Euler(0, 0, GetMinutes() * minutesToDegrees);
             //hourHand.Rotate(transform.eulerAngles + new Vector3(0, 0, -GetHour() * hoursToDegrees * Time.deltaTime));
             //hourHand.Rotate(transform.eulerAngles + new Vector3(0, 0, -GetMinutes() * minutesToDegrees * Time.deltaTime));
         }
@@ -207,7 +208,7 @@ public class GameManager : MonoBehaviour
         myLGG.active = false;
         yield break;
     }
-    IEnumerator GameFinished()
+    public IEnumerator GameFinished()
     {
         depth.active = true;
         Cursor.lockState = CursorLockMode.None;
@@ -217,13 +218,12 @@ public class GameManager : MonoBehaviour
         QuitGame();
         yield break;
     }
-    private void OnCollisionEnter(Collision collision)
+    public IEnumerator GameOver()
     {
-        if (collision.transform.tag == "Player")
-        {
-            Debug.Log("a");
-            StartCoroutine(GameFinished());
-        }
+        gameFinished.DOFade(1, 1);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(1);
+        yield break;
     }
 }
 

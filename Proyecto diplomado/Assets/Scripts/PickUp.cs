@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 // PickUp.cs
 // Usando referencias de:
 // youtube.com/watch?v=pPcYr3tL3Sc
@@ -9,6 +10,7 @@ public class PickUp : MonoBehaviour
 {
     [SerializeField] private GameObject dotScreen, handScreen, player;
     [SerializeField] private Transform holdGameObject;
+    [SerializeField] private AudioSource openDoor, closedDoor;
 
     private Camera myCam;
     private bool isPicked;
@@ -33,7 +35,7 @@ public class PickUp : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, interactionLayer) && GameManager.gameIsPaused == false && !isPicked)
         {
-            if (hit.transform.tag == "CanPickUp" || hit.transform.tag == "Grillo")
+            if (hit.transform.tag == "CanPickUp" || hit.transform.tag == "Grillo" || hit.transform.tag == "Door")
             {
                 dotScreen.SetActive(false);
                 handScreen.SetActive(true);
@@ -93,6 +95,12 @@ public class PickUp : MonoBehaviour
                                 if ((inventorySystemReference.items[i].itemType == Item.ItemType.key))
                                 {
                                     inventorySystemReference.Remove(inventorySystemReference.items[i]);
+                                    openDoor.Play();
+                                    StartCoroutine(GameManager.gameManagerInstance.GameFinished());
+                                }
+                                else
+                                {
+                                    closedDoor.Play();
                                 }
                             }
                             break;

@@ -12,7 +12,6 @@ public class Settings : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] public static float currentMouseSensibility;
     public Slider sensibility, volume;
-    public int hola;
 
     private void Awake()
     {

@@ -89,4 +89,11 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.transform.tag == "Enemy")
+        {
+            StartCoroutine(GameManager.gameManagerInstance.GameOver());
+        }
+    }
 }
