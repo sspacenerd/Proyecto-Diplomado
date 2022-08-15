@@ -8,6 +8,10 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using TMPro;
 using UnityGamingServices;
+using Unity.RemoteConfig;
+using Unity.Services.Core;
+using Unity.Services.Authentication;
+using UnityEngine.AI;
 
 //GameMaganer.cs
 //Usando referencias de:
@@ -21,6 +25,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject menu, settings, controls;
     [SerializeField] private Image imageToFade;
     [SerializeField] private CanvasGroup gameFinished;
+    [SerializeField] private Button buttonsControls;
 
     public const int hoursInDay = 24, minutesInHour = 60;
     const float hoursToDegrees = 360 / 12, minutesToDegrees = 360 / 60;
@@ -28,17 +33,18 @@ public class GameManager : MonoBehaviour
     public float dayDuration = 30f, speed;
     public Settings mySettings;
     public Transform minuteHand, hourHand;
-    public TextMeshProUGUI grillo;
+    public TextMeshProUGUI grillo, thanksForPlaying;
     public int grillos;
     public Volume volume;
-    
-    private float totalTime = 0, currentTime = 0, goToSpeed;
+    public PlayerController player;
+    public GameObject enemy;
+
+    private float totalTime = 0, currentTime = 0;
     private bool manipulatinTime, gg;
     private Camera myCam;
     private DepthOfField depth;
     private ChromaticAberration myChrom;
     private LiftGammaGain myLGG;
-    public int hola;
 
 
 
@@ -56,26 +62,11 @@ public class GameManager : MonoBehaviour
     {
         
         await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
-        hola = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.Hola, hola);
-        /*
-        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
-        livesCounter = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.CurrentLives, livesCounter);
-
-        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
-        maxAmmo = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.MaxAmmo, maxAmmo);
-
-        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
-        ammoCounter = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.CurrentAmmo, ammoCounter);
-
-        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
-        isShopActive = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.IsShopActive, isShopActive);
-
-        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
-        isLivesShopActive = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.IsLivesShopActive, isLivesShopActive);
-
-        await TaskUtils.WaitUntil(() => RemoteSettingsManager.IsReady);
-        isAmmoShopActive = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.IsAmmoShopActive, isAmmoShopActive);
-        */
+        dayDuration = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.DayDuration, dayDuration);
+        player.walkSpeed = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.WalkSpeed, player.walkSpeed);
+        enemy.GetComponent<NavMeshAgent>().speed = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.AiSpeed, enemy.GetComponent<NavMeshAgent>().speed);
+        buttonsControls.enabled = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.ButtonControls, buttonsControls.enabled);
+        thanksForPlaying.text = RemoteSettingsManager.GetConfig(RemoteSettingsConstants.ThanksForPlaying, thanksForPlaying.text);
     }
     /*
     private void Start()

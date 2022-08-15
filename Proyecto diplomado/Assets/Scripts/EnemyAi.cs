@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class EnemyAi : MonoBehaviour
 {
+    //EnemyAi.cs
+    //Usando referencias de:
+    //www.youtube.com/watch?v=UjkSFoLxesw 
     public NavMeshAgent agent;
 
     public Transform player;

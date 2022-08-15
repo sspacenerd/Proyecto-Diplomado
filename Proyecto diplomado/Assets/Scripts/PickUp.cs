@@ -19,7 +19,7 @@ public class PickUp : MonoBehaviour
     public float rayDistance = 3f;
 
     public static GameObject pickedGameObejct;
-    public GameObject[] aaa;
+    public GameObject[] photos;
 
 
     void Start()
@@ -31,7 +31,6 @@ public class PickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(pickedGameObejct);
         if (Physics.Raycast(transform.position, myCam.transform.forward, out hit, rayDistance, interactionLayer) && GameManager.gameIsPaused == false && !isPicked)
         {
             if (hit.transform.tag == "CanPickUp" || hit.transform.tag == "Grillo")
@@ -110,7 +109,7 @@ public class PickUp : MonoBehaviour
                             {
                                 if (inventorySystemReference.items[i].itemType == Item.ItemType.photo)
                                 {
-                                    aaa[i].SetActive(true);
+                                    photos[i].SetActive(true);
                                 }
                             }
                             break;
